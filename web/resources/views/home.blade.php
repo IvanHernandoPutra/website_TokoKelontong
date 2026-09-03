@@ -15,7 +15,9 @@
 Rasa Asli Indonesia, <span class="text-primary">Dikirim ke Seluruh Dunia</span>
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-Oleh-oleh khas Nusantara pilihan — snack, bumbu rempah, kopi, dan makanan kering terbaik dari produsen lokal.
+Oleh-oleh khas Nusantara pilihan </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+snack, bumbu rempah, kopi, dan makanan kering terbaik dari produsen lokal.
 </p>
 <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
 <a class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-xl py-space-md rounded-xl font-label-lg text-label-lg transition-all shadow-[0_4px_16px_-4px_rgba(159,60,22,0.35)]" href="{{ route('products') }}">
