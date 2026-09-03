@@ -10,3 +10,5 @@ web/storage/framework/views/*
 web/storage/logs/*
 .DS_Store
 Thumbs.db
+web/public/images/products_orig/
+web/database/*.sqlite.bak

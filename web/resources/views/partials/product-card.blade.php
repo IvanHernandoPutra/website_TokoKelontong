@@ -2,7 +2,7 @@
 <div class="flex flex-col gap-space-xs">
 <div class="relative w-full aspect-square rounded-lg bg-[#FAF6F0] overflow-hidden">
 @if($product->image)
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="{{ $product->name }}" src="{{ $product->image }}"/>
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" alt="{{ $product->name }}" src="{{ $product->image }}"/>
 @else
 <div class="w-full h-full flex items-center justify-center text-surface-dim"><span class="material-symbols-outlined text-[64px]">fastfood</span></div>
 @endif

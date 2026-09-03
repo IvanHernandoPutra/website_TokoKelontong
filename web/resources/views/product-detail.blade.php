@@ -19,7 +19,7 @@
 <div class="max-w-container-max mx-auto px-gutter-desktop grid grid-cols-1 lg:grid-cols-2 gap-space-2xl">
 <div class="relative aspect-square rounded-xl bg-[#FAF6F0] overflow-hidden">
 @if($product->image)
-<img class="w-full h-full object-cover" alt="{{ $product->name }}" src="{{ $product->image }}"/>
+<img class="w-full h-full object-contain" alt="{{ $product->name }}" src="{{ $product->image }}"/>
 @else
 <div class="w-full h-full flex items-center justify-center text-surface-dim"><span class="material-symbols-outlined text-[96px]">fastfood</span></div>
 @endif
