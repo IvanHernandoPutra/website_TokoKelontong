@@ -1,0 +1,12 @@
+web/vendor/
+web/node_modules/
+web/.env
+web/.env.backup
+web/.env.production
+web/storage/*.key
+web/storage/framework/cache/data/*
+web/storage/framework/sessions/*
+web/storage/framework/views/*
+web/storage/logs/*
+.DS_Store
+Thumbs.db

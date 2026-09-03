@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: ./docker
+    container_name: toko-kelontong-app
+    volumes:
+      - ./web:/app
+    ports:
+      - "8085:8000"
+    restart: unless-stopped
