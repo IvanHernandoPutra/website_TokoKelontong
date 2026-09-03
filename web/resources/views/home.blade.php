@@ -78,29 +78,73 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 </section>
 
 <!-- KEUNGGULAN -->
-<section class="w-full bg-surface py-space-3xl">
-<div class="max-w-container-max mx-auto px-gutter-desktop">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
-<div class="p-space-xl rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-sm shadow-[0_2px_12px_-3px_rgba(84,46,26,0.06)]">
-<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-[28px]">storefront</span>
+<section class="w-full bg-surface py-space-3xl relative">
+<div class="max-w-container-max mx-auto px-4 sm:px-gutter-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Keunggulan 1: Terracotta -->
+<div class="group relative p-7 sm:p-8 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 flex flex-col justify-between gap-space-md shadow-[0_4px_20px_-6px_rgba(84,46,26,0.05)] hover:shadow-[0_16px_36px_-10px_rgba(159,60,22,0.18)] hover:-translate-y-2 hover:bg-gradient-to-b hover:from-white hover:to-[#fff5f1] overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-primary-container opacity-90 group-hover:h-2 transition-all"></div>
+<div class="flex items-center justify-between gap-2">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="material-symbols-outlined text-[30px]">storefront</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Produk Asli Indonesia</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Dikurasi langsung dari produsen dan UMKM lokal, menjaga keaslian cita rasa kampung halaman.</p>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+<span>100% Otentik</span>
+</span>
 </div>
-<div class="p-space-xl rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-sm shadow-[0_2px_12px_-3px_rgba(84,46,26,0.06)]">
-<div class="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
-<span class="material-symbols-outlined text-[28px]">public</span>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-primary transition-colors">Produk Asli Indonesia</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Dikurasi langsung dari ribuan produsen dan UMKM lokal, menjaga resep turun-temurun dan cita rasa asli nusantara.</p>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Pengiriman Internasional</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Melayani pembeli di berbagai negara dengan pengiriman ekspres terpercaya hingga ke pintu rumah Anda.</p>
+<div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+<span>Kurasi UMKM Mitra</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </div>
-<div class="p-space-xl rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-space-sm shadow-[0_2px_12px_-3px_rgba(84,46,26,0.06)]">
-<div class="w-12 h-12 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center">
-<span class="material-symbols-outlined text-[28px]">inventory_2</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Kemasan Standar Ekspor</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Dikemas aman untuk perjalanan jarak jauh menggunakan kemasan kedap udara, bubble-wrap, dan kardus tebal.</p>
+
+<!-- Keunggulan 2: Forest Green -->
+<div class="group relative p-7 sm:p-8 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 hover:border-secondary/50 transition-all duration-300 flex flex-col justify-between gap-space-md shadow-[0_4px_20px_-6px_rgba(84,46,26,0.05)] hover:shadow-[0_16px_36px_-10px_rgba(68,103,68,0.20)] hover:-translate-y-2 hover:bg-gradient-to-b hover:from-white hover:to-[#f2f8f2] overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary to-[#2c472c] opacity-90 group-hover:h-2 transition-all"></div>
+<div class="flex items-center justify-between gap-2">
+<div class="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center group-hover:scale-110 group-hover:bg-secondary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="material-symbols-outlined text-[30px]">public</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-3 py-1 rounded-full group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[13px]">flight_takeoff</span>
+<span>35+ Negara</span>
+</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-secondary transition-colors">Pengiriman Internasional</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Layanan pengiriman ekspres lintas benua ke Asia, Australia, Eropa, dan Amerika dengan nomor resi tracking resmi.</p>
+</div>
+<div class="flex items-center gap-1 text-secondary text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+<span>Jangkauan Global</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+
+<!-- Keunggulan 3: Warm Gold -->
+<div class="group relative p-7 sm:p-8 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 hover:border-tertiary/50 transition-all duration-300 flex flex-col justify-between gap-space-md shadow-[0_4px_20px_-6px_rgba(84,46,26,0.05)] hover:shadow-[0_16px_36px_-10px_rgba(133,79,0,0.18)] hover:-translate-y-2 hover:bg-gradient-to-b hover:from-white hover:to-[#fff9f0] overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-tertiary to-[#5c3700] opacity-90 group-hover:h-2 transition-all"></div>
+<div class="flex items-center justify-between gap-2">
+<div class="w-14 h-14 rounded-2xl bg-tertiary/10 text-tertiary flex items-center justify-center group-hover:scale-110 group-hover:bg-tertiary group-hover:text-white transition-all duration-300 shadow-sm">
+<span class="material-symbols-outlined text-[30px]">inventory_2</span>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] font-bold uppercase tracking-wider text-tertiary bg-tertiary/10 px-3 py-1 rounded-full group-hover:bg-tertiary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[13px]">shield</span>
+<span>Food Grade</span>
+</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-tertiary transition-colors">Kemasan Standar Ekspor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Diproteksi kemasan kedap udara, bubble-wrap tebal, dan kardus kuat berlapis agar makanan tetap renyah dan lolos custom.</p>
+</div>
+<div class="flex items-center gap-1 text-tertiary text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+<span>Proteksi Maksimal</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
 </div>
 </div>
 </div>
