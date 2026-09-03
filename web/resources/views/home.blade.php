@@ -7,26 +7,24 @@
 <div class="max-w-container-max mx-auto px-gutter-desktop py-space-3xl lg:py-space-4xl relative z-10">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
 <div class="lg:col-span-7 flex flex-col items-start gap-space-md">
-<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-sm py-space-2xs rounded-full">
-<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Oleh-oleh Khas Nusantara &bull; Global Export</span>
+<div class="inline-flex items-center gap-space-xs bg-secondary/10 border border-secondary/20 px-space-sm py-space-2xs rounded-full">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Oleh-Oleh Khas Nusantara &bull; Pengiriman Internasional</span>
 </div>
-<h1 class="font-display text-display lg:text-[54px] lg:leading-[62px] text-on-surface font-bold tracking-tight">
+<h1 class="font-display text-display lg:text-[52px] lg:leading-[60px] text-on-surface font-black tracking-tight">
 Rasa Asli Indonesia, <span class="text-primary">Dikirim ke Seluruh Dunia</span>
 </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-Oleh-oleh khas Nusantara pilihan </p>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
-snack, bumbu rempah, kopi, dan makanan kering terbaik dari produsen lokal.
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-xl">
+Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik, dan makanan khas Nusantara. Dikurasi langsung dari produsen lokal dengan kemasan standar ekspor yang aman sampai tujuan.
 </p>
 <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
 <a class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-xl py-space-md rounded-xl font-label-lg text-label-lg transition-all shadow-[0_4px_16px_-4px_rgba(159,60,22,0.35)]" href="{{ route('products') }}">
-<span>Lihat Produk</span>
+<span>Lihat Seluruh Produk</span>
 <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
 </a>
 <a class="inline-flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface px-space-lg py-space-md rounded-xl font-label-lg text-label-lg transition-all" href="{{ route('shipping') }}">
 <span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
-<span>Info Pengiriman</span>
+<span>Info Pengiriman &amp; Ekspor</span>
 </a>
 </div>
 <div class="mt-space-lg w-full max-w-xl rounded-2xl bg-surface/95 backdrop-blur-md border border-outline-variant/40 shadow-[0_6px_24px_-6px_rgba(84,46,26,0.08)] p-3 sm:p-5">
