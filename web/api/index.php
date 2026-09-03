@@ -13,11 +13,33 @@ foreach ($dirs as $dir) {
     }
 }
 
-// 2. Prepare SQLite in /tmp with read-write access
-$dbSource = __DIR__ . '/../database/database.sqlite';
+// 2. Locate and copy SQLite database to writable /tmp
+$candidates = [
+    __DIR__ . '/../database/database.sqlite',
+    __DIR__ . '/../web/database/database.sqlite',
+    __DIR__ . '/database/database.sqlite',
+    dirname(__DIR__) . '/database/database.sqlite',
+    dirname(__DIR__) . '/web/database/database.sqlite',
+    '/var/task/database/database.sqlite',
+    '/var/task/web/database/database.sqlite',
+    '/var/task/user/database/database.sqlite',
+    '/var/task/user/web/database/database.sqlite',
+];
+$found = null;
+foreach ($candidates as $c) {
+    if (file_exists($c) && filesize($c) > 0) {
+        $found = $c;
+        break;
+    }
+}
+
 $tmpDb = '/tmp/database.sqlite';
-if (file_exists($dbSource) && (!file_exists($tmpDb) || filesize($tmpDb) === 0)) {
-    copy($dbSource, $tmpDb);
+if (!file_exists($tmpDb) || filesize($tmpDb) === 0) {
+    if ($found) {
+        copy($found, $tmpDb);
+    } else {
+        touch($tmpDb);
+    }
 }
 
 // 3. Set environment variables for serverless runtime
@@ -45,4 +67,10 @@ $_SERVER['DB_DATABASE'] = $tmpDb;
 $_SERVER['VIEW_COMPILED_PATH'] = '/tmp/storage/framework/views';
 
 // 4. Forward request to Laravel public index
-require __DIR__ . '/../public/index.php';
+if (file_exists(__DIR__ . '/../public/index.php')) {
+    require __DIR__ . '/../public/index.php';
+} elseif (file_exists(__DIR__ . '/../web/public/index.php')) {
+    require __DIR__ . '/../web/public/index.php';
+} else {
+    require '/var/task/public/index.php';
+}
