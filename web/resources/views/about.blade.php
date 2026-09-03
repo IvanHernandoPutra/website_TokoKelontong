@@ -4,22 +4,19 @@
 
 @section('content')
 <div class="flex flex-col w-full">
-<!-- Breadcrumb Header -->
-<section class="w-full bg-surface-container-low py-space-xl">
-  <div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col gap-space-xs">
-    <nav class="flex items-center gap-space-2xs font-label-md text-label-md text-on-surface-variant">
-      <a class="hover:text-primary transition-colors flex items-center gap-1" href="{{ route('home') }}">
-        <span class="material-symbols-outlined text-[16px]">home</span> Beranda
-      </a>
-      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span class="text-on-surface font-semibold">Tentang Kami</span>
-    </nav>
-    <h1 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Tentang Toko Kelontong</h1>
+<!-- Subtle Breadcrumb Bar -->
+<section class="max-w-container-max mx-auto px-gutter-desktop w-full pt-space-md pb-space-xs">
+  <div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+    <a class="hover:text-primary transition-colors flex items-center gap-1" href="{{ route('home') }}">
+      <span class="material-symbols-outlined text-[16px]">home</span> Beranda
+    </a>
+    <span>/</span>
+    <span class="text-primary font-semibold">Tentang Kami</span>
   </div>
 </section>
 
 <!-- Section 1: Perjalanan & Cerita Toko (Story Hero) -->
-<section class="max-w-container-max mx-auto px-gutter-desktop w-full py-space-3xl">
+<section class="max-w-container-max mx-auto px-gutter-desktop w-full pb-space-3xl pt-space-md">
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
     <!-- Left Narrative Content -->
     <div class="lg:col-span-7 flex flex-col items-start">
@@ -27,9 +24,9 @@
         <span class="material-symbols-outlined text-[16px]">storefront</span>
         <span>Akar Nilai &amp; Perjalanan</span>
       </div>
-      <h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight mb-space-md">
+      <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight mb-space-md">
         Dari Sudut Klaten untuk Rindu Nusantara di Seluruh Belahan Dunia.
-      </h2>
+      </h1>
       <p class="font-body-lg text-body-lg text-primary font-semibold mb-space-sm leading-relaxed">
         Toko Kelontong adalah unit usaha ritel makanan khas Indonesia di bawah naungan resmi CV. Bertiga Tradexa.
       </p>

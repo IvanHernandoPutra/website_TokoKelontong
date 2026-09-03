@@ -4,37 +4,40 @@
 
 @section('content')
 <div class="flex flex-col w-full">
-<!-- Breadcrumb Header -->
-<section class="w-full bg-surface-container-low py-space-xl">
-  <div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col gap-space-xs">
-    <nav class="flex items-center gap-space-2xs font-label-md text-label-md text-on-surface-variant">
-      <a class="hover:text-primary transition-colors flex items-center gap-1" href="{{ route('home') }}">
-        <span class="material-symbols-outlined text-[16px]">home</span> Beranda
-      </a>
-      <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-      <span class="text-on-surface font-semibold">Toko Kami</span>
-    </nav>
-    <div class="flex flex-col md:flex-row md:items-end justify-between mt-space-xs gap-space-md">
+<!-- Subtle Breadcrumb Bar -->
+<section class="max-w-container-max mx-auto px-gutter-desktop w-full pt-space-md pb-space-xs">
+  <div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+    <a class="hover:text-primary transition-colors flex items-center gap-1" href="{{ route('home') }}">
+      <span class="material-symbols-outlined text-[16px]">home</span> Beranda
+    </a>
+    <span>/</span>
+    <span class="text-primary font-semibold">Toko Kami</span>
+  </div>
+</section>
+
+<!-- Section: Kunjungi Toko Kami (Header + Grid Terpadu) -->
+<section class="w-full bg-surface pb-space-3xl pt-space-md">
+  <div class="max-w-container-max mx-auto px-gutter-desktop">
+    <!-- Header Terpadu langsung di atas Grid -->
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
       <div>
         <div class="inline-flex items-center gap-1 text-secondary font-label-sm uppercase tracking-wider font-bold mb-space-2xs">
           <span class="material-symbols-outlined text-[16px]">pin_drop</span> Titik Temu Fisik
         </div>
-        <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Kunjungi Toko Kami</h1>
+        <h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+          Kunjungi Toko Kami
+        </h1>
         <p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-xl">
           Ingin belanja langsung, memilih sendiri oleh-oleh favorit, atau berkonsultasi rencana titipan ekspor? Pintu gerai fisik kami selalu terbuka hangat menyambut Anda.
         </p>
       </div>
-      <div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md bg-surface-container-high px-space-md py-space-xs rounded-lg self-start md:self-auto">
+      <div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md bg-surface-container px-space-md py-space-xs rounded-lg self-start md:self-auto shadow-sm">
         <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
         <span>Outlet Pusat Beroperasi Normal</span>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Section: Outlet Fisik & Peta Navigasi -->
-<section class="w-full bg-surface py-space-3xl">
-  <div class="max-w-container-max mx-auto px-gutter-desktop">
+    <!-- Outlet Modular Cards Grid -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
       <!-- Outlet 1: Klaten Pusat (Main Featured Card) -->
       <div class="lg:col-span-8 bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row">

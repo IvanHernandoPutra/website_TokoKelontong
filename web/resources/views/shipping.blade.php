@@ -4,37 +4,41 @@
 
 @section('content')
 <div class="flex flex-col w-full">
-<!-- Breadcrumb Header & Quick Stats -->
-<section class="w-full bg-surface-container-low py-space-xl">
-  <div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col md:flex-row md:items-center justify-between gap-space-lg">
-    <div class="flex flex-col gap-space-xs">
-      <nav class="flex items-center gap-space-2xs font-label-md text-label-md text-on-surface-variant">
-        <a class="hover:text-primary transition-colors flex items-center gap-1" href="{{ route('home') }}">
-          <span class="material-symbols-outlined text-[16px]">home</span> Beranda
-        </a>
-        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
-        <span class="text-on-surface font-semibold">Pengiriman &amp; Pemesanan</span>
-      </nav>
-      <h1 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Pengiriman &amp; Pemesanan</h1>
-      <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
-        Layanan terintegrasi ekspor makanan khas Indonesia ke seluruh dunia dan distribusi domestik nusantara dengan jaminan proteksi kemasan maksimal.
+<!-- Top Banner / Headline Overview -->
+<section class="w-full bg-surface-container-low py-space-3xl px-gutter-desktop">
+  <div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between gap-space-2xl">
+    <div class="max-w-2xl flex flex-col items-start gap-space-sm">
+      <div class="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm uppercase tracking-wider font-bold">
+        <span class="material-symbols-outlined text-[15px]">local_shipping</span>
+        Jaminan Keamanan Kirim Nusantara &amp; Mancanegara
+      </div>
+      <h1 class="font-display text-display text-on-surface tracking-tight leading-tight">
+        Pengiriman &amp; Pemesanan
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        Panduan lengkap dan transparan memesan panganan otentik nusantara. Mulai dari kiriman harian domestik antarkota hingga distribusi ekspres ke seluruh penjuru dunia dengan standar kemasan ekspor terverifikasi.
       </p>
+      <div class="flex flex-wrap items-center gap-space-md pt-space-xs font-label-md text-label-md text-on-surface-variant">
+        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span> Legalitas Ekspor CV. Bertiga Tradexa</span>
+        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">check_circle</span> Tanpa Biaya Tersembunyi</span>
+        <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-tertiary text-[18px]">security</span> Proteksi Double-Wall Box</span>
+      </div>
     </div>
     <!-- Quick Metrics Decorative Visual -->
     <div class="w-full md:w-auto shrink-0">
       <div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md min-w-[280px]">
         <div class="flex items-center justify-between gap-space-md pb-space-xs">
-          <span class="font-title-md text-title-md text-on-surface">Statistik Pemenuhan</span>
+          <span class="font-title-md text-title-md text-on-surface font-semibold">Statistik Pemenuhan</span>
           <span class="material-symbols-outlined text-secondary text-[24px]">verified_user</span>
         </div>
         <div class="grid grid-cols-2 gap-space-md">
           <div class="flex flex-col bg-surface-container-low p-space-sm rounded-lg">
             <span class="font-display-mobile text-display-mobile text-primary font-bold">99.8%</span>
-            <span class="font-label-sm text-label-sm text-on-surface-variant">Kemasan Utuh Lolos Custom</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Kemasan Utuh Lolos Custom</span>
           </div>
           <div class="flex flex-col bg-surface-container-low p-space-sm rounded-lg">
             <span class="font-display-mobile text-display-mobile text-secondary font-bold">3-7</span>
-            <span class="font-label-sm text-label-sm text-on-surface-variant">Hari Kerja Pengiriman Global</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Hari Kerja Pengiriman Global</span>
           </div>
         </div>
         <div class="flex items-center gap-space-xs pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
@@ -51,7 +55,7 @@
   <div class="max-w-container-max mx-auto flex flex-col gap-space-2xl">
     <div class="flex flex-col items-center text-center max-w-2xl mx-auto gap-space-2xs">
       <span class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest">Rute Distribusi</span>
-      <h2 class="font-headline-lg text-headline-lg text-on-surface">Pilih Jangkauan Pengiriman Anda</h2>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Pilih Jangkauan Pengiriman Anda</h2>
       <p class="font-body-md text-body-md text-on-surface-variant">
         Kami mengintegrasikan sistem logistik terpercaya untuk memastikan setiap bumbu basah, sambal botol, kerupuk, maupun kopi nusantara sampai dalam kualitas puncak.
       </p>
@@ -64,7 +68,7 @@
             <div class="flex items-center gap-space-sm">
               <span class="text-3xl">🇮🇩</span>
               <div class="flex flex-col">
-                <h3 class="font-headline-md text-headline-md text-on-surface">Domestik Indonesia</h3>
+                <h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Domestik Indonesia</h3>
                 <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Seluruh Wilayah Kepulauan RI</span>
               </div>
             </div>
@@ -118,7 +122,7 @@
             <div class="flex items-center gap-space-sm">
               <span class="text-3xl">🌏</span>
               <div class="flex flex-col">
-                <h3 class="font-headline-md text-headline-md text-on-surface">Internasional</h3>
+                <h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Internasional</h3>
                 <span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Ekspor &amp; Komunitas Diaspora</span>
               </div>
             </div>
@@ -173,7 +177,7 @@
   <div class="max-w-container-max mx-auto flex flex-col gap-space-2xl">
     <div class="flex flex-col items-center text-center max-w-2xl mx-auto gap-space-2xs">
       <span class="font-label-md text-label-md text-secondary font-bold uppercase tracking-widest">Alur Transaksi</span>
-      <h2 class="font-headline-lg text-headline-lg text-on-surface">3 Langkah Mudah Berbelanja</h2>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">3 Langkah Mudah Berbelanja</h2>
       <p class="font-body-md text-body-md text-on-surface-variant">
         Proses pemesanan yang sederhana, aman, dan langsung dipandu oleh tim kami dari Klaten.
       </p>
@@ -251,7 +255,7 @@
     <div class="w-full lg:w-1/2 flex flex-col gap-space-lg">
       <div class="flex flex-col gap-space-xs">
         <span class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest">Kualitas Tanpa Kompromi</span>
-        <h2 class="font-headline-lg text-headline-lg text-on-surface">Standar Kemasan Ekspor Kelas Internasional</h2>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Standar Kemasan Ekspor Kelas Internasional</h2>
         <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
           Perjalanan antar benua menuntut proteksi berlipat. Makanan Indonesia seperti kerupuk renyah, sambal botol kaca, hingga bubuk rempah dikemas khusus agar rasa, aroma, dan bentuknya tetap utuh saat unboxing.
         </p>
@@ -296,7 +300,7 @@
       <!-- CTA Copy & Direct WhatsApp Link -->
       <div class="w-full lg:w-1/2 flex flex-col gap-space-md">
         <span class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest">Kalkulasi Cepat &amp; Akurat</span>
-        <h2 class="font-headline-lg text-headline-lg text-on-surface">Cek Estimasi Biaya Kirim ke Negara Anda</h2>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Cek Estimasi Biaya Kirim ke Negara Anda</h2>
         <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
           Ingin memesan partai eceran keluarga atau pasokan grosir untuk restoran Indonesia di luar negeri? Tim kami siap memberikan simulasi ongkos kirim paling ekonomis tanpa ikatan transaksi.
         </p>
@@ -326,26 +330,26 @@
       <div class="w-full lg:w-1/2 bg-surface-container-lowest rounded-xl p-space-xl shadow-md flex flex-col gap-space-md">
         <div class="flex items-center justify-between pb-space-xs">
           <div>
-            <h3 class="font-title-lg text-title-lg text-on-surface">Simulasi Estimasi Biaya</h3>
+            <h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Simulasi Estimasi Biaya</h3>
             <p class="font-body-sm text-body-sm text-on-surface-variant">Hitung perkiraan durasi &amp; layanan pengiriman</p>
           </div>
           <span class="material-symbols-outlined text-primary text-[28px]">local_shipping</span>
         </div>
         <form class="flex flex-col gap-space-sm" id="shippingSimulator" onsubmit="event.preventDefault(); calculateShipping();">
           <div class="flex flex-col gap-1">
-            <label class="font-label-md text-label-md text-on-surface" for="destType">Tipe Tujuan Pengiriman</label>
+            <label class="font-label-md text-label-md text-on-surface font-medium" for="destType">Tipe Tujuan Pengiriman</label>
             <select class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" id="destType" onchange="updateCountryOptions()">
               <option value="domestic">🇮🇩 Domestik Indonesia (Antar Kota / Pulau)</option>
               <option value="intl">🌏 Internasional (Asia, Eropa, Australia, AS)</option>
             </select>
           </div>
           <div class="flex flex-col gap-1" id="countryWrapper">
-            <label class="font-label-md text-label-md text-on-surface" for="destLocation">Negara / Kota Tujuan</label>
+            <label class="font-label-md text-label-md text-on-surface font-medium" for="destLocation">Negara / Kota Tujuan</label>
             <input class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface placeholder:text-outline outline-none focus:ring-2 focus:ring-primary" id="destLocation" placeholder="Contoh: Surabaya, Jakarta Barat, Medan, Denpasar" required="" type="text"/>
           </div>
           <div class="grid grid-cols-2 gap-space-sm">
             <div class="flex flex-col gap-1">
-              <label class="font-label-md text-label-md text-on-surface" for="weightKg">Perkiraan Berat Total</label>
+              <label class="font-label-md text-label-md text-on-surface font-medium" for="weightKg">Perkiraan Berat Total</label>
               <select class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" id="weightKg">
                 <option value="1">1 - 2 Kg (Camilan / Bumbu)</option>
                 <option value="3">3 - 5 Kg (Paket Sedang)</option>
@@ -354,7 +358,7 @@
               </select>
             </div>
             <div class="flex flex-col gap-1">
-              <label class="font-label-md text-label-md text-on-surface" for="productType">Kategori Makanan</label>
+              <label class="font-label-md text-label-md text-on-surface font-medium" for="productType">Kategori Makanan</label>
               <select class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" id="productType">
                 <option value="dry">Makanan Kering / Snack</option>
                 <option value="sauce">Bumbu / Sambal Botol</option>
