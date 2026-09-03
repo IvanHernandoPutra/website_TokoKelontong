@@ -57,7 +57,7 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 </div>
 <div class="lg:col-span-5 relative">
 <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(84,46,26,0.18)] bg-surface-container">
-<img class="w-full h-full object-cover" alt="Meja rempah dan kemasan ekspor Toko Kelontong" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKCtV05wLjWJq0YoyBaQC4XbiI9bazHg-tUi98MwMqa40VzkDflCW5MDHfJ56sRjNDuX787izk1kH-uNNBJ_voGIwee_KW7tw01J7XOLfWjUeUWY7J7O4y6zDxnfRew0SE6pOyfioZveVPUz_h1irQtz-Zy1qWMAKmFWNkMpj-wnEb7tSgMoqlXY1z4tfjwOnNCq0sNQANi4HTmV1XacrzLjtHQADXfWGoXHs8fQF-3mSwDpm1PTeT"/>
+<img class="w-full h-full object-cover" alt="Meja rempah dan kemasan ekspor Toko Kelontong" src="{{ asset('images/hero-home.jpg') }}"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-4 left-4 right-4 p-space-sm bg-surface/95 backdrop-blur-md rounded-xl shadow-md flex items-center justify-between">
 <div class="flex items-center gap-space-sm">
@@ -230,7 +230,7 @@ Unit usaha dari <strong>CV. Bertiga Tradexa</strong> ini hadir menjawab kerindua
 </div>
 <div class="lg:col-span-6">
 <div class="relative rounded-2xl overflow-hidden shadow-[0_16px_36px_-10px_rgba(84,46,26,0.12)] bg-surface-container">
-<img class="w-full h-96 lg:h-[450px] object-cover" alt="Interior Toko Kelontong Klaten" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Y5EgI0mppZi5F76fJBDSU07AaT3ihhDi9WxBPr1Bekc3yn04e9An5-VRhXumYY-E8al34OfCeWSY9do10-6iWuPtwfhhiu2gNrTvah3IQnBeuCHQ6xTbAqDP5J3U6oM8iJKROjnhQ9HETSxS_LKnoxlrA6MnnnaA2T7LgsMfO8-fjI52lI0If-KVfdgxp9KJukPxqCZnUHSQnVd6W_aghZt1-pIyEiigbsp496-vXZ2ycAXUPxrF"/>
+<img class="w-full h-96 lg:h-[450px] object-cover" alt="Interior Toko Kelontong Klaten" src="{{ asset('images/interior-toko.jpg') }}"/>
 <div class="absolute inset-0 bg-gradient-to-tr from-black/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 left-6 right-6 p-space-md bg-surface/90 backdrop-blur-md rounded-xl flex items-center justify-between">
 <div>

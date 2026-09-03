@@ -20,7 +20,7 @@
 @foreach ($stores as $store)
 <div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
 <div class="aspect-[16/9] bg-surface-container overflow-hidden">
-<img class="w-full h-full object-cover" alt="{{ $store->name }}" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Y5EgI0mppZi5F76fJBDSU07AaT3ihhDi9WxBPr1Bekc3yn04e9An5-VRhXumYY-E8al34OfCeWSY9do10-6iWuPtwfhhiu2gNrTvah3IQnBeuCHQ6xTbAqDP5J3U6oM8iJKROjnhQ9HETSxS_LKnoxlrA6MnnnaA2T7LgsMfO8-fjI52lI0If-KVfdgxp9KJukPxqCZnUHSQnVd6W_aghZt1-pIyEiigbsp496-vXZ2ycAXUPxrF"/>
+<img class="w-full h-full object-cover" alt="{{ $store->name }}" src="{{ asset('images/interior-toko.jpg') }}"/>
 </div>
 <div class="p-space-lg flex flex-col gap-space-xs">
 <div class="flex items-center justify-between">
