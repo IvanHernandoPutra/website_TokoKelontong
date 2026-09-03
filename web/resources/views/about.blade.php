@@ -151,50 +151,65 @@
   </div>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
     <!-- Nilai 1: Kualitas Produk -->
-    <div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-start relative overflow-hidden group">
-      <div class="w-14 h-14 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform">
+    <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm hover:shadow-2xl hover:-translate-y-2.5 transition-all duration-300 ease-out flex flex-col items-start relative overflow-hidden group border border-outline-variant/20 hover:border-secondary/30 cursor-default">
+      <!-- Top Accent Bar -->
+      <div class="absolute top-0 inset-x-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+      <!-- Ambient Glow Bloom -->
+      <div class="absolute -right-8 -top-8 w-28 h-28 bg-secondary/15 rounded-full blur-xl group-hover:scale-150 transition-all duration-500 pointer-events-none opacity-0 group-hover:opacity-100"></div>
+
+      <div class="w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:rotate-6 group-hover:bg-secondary group-hover:text-on-secondary group-hover:shadow-md transition-all duration-300">
         <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
       </div>
       <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Pilar 01</span>
-      <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary font-semibold mb-space-xs transition-colors duration-200">
         Kualitas Produk Terbaik
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
         Kurasi ketat komoditas pilihan, bumbu olahan matang, dan camilan lokal yang memenuhi standar higienitas ekspor dan ketahanan simpan internasional.
       </p>
-      <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-secondary font-label-md text-label-md font-semibold">
+      <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-secondary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
         <span class="material-symbols-outlined text-[18px]">verified</span> 100% Asli Nusantara
       </div>
     </div>
     <!-- Nilai 2: Harga Wajar & Transparan -->
-    <div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-start relative overflow-hidden group">
-      <div class="w-14 h-14 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform">
+    <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm hover:shadow-2xl hover:-translate-y-2.5 transition-all duration-300 ease-out flex flex-col items-start relative overflow-hidden group border border-outline-variant/20 hover:border-tertiary/30 cursor-default">
+      <!-- Top Accent Bar -->
+      <div class="absolute top-0 inset-x-0 h-1 bg-tertiary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+      <!-- Ambient Glow Bloom -->
+      <div class="absolute -right-8 -top-8 w-28 h-28 bg-tertiary/15 rounded-full blur-xl group-hover:scale-150 transition-all duration-500 pointer-events-none opacity-0 group-hover:opacity-100"></div>
+
+      <div class="w-14 h-14 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:-rotate-6 group-hover:bg-tertiary group-hover:text-on-tertiary group-hover:shadow-md transition-all duration-300">
         <span class="material-symbols-outlined text-[32px]">handshake</span>
       </div>
       <span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider mb-1">Pilar 02</span>
-      <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary font-semibold mb-space-xs transition-colors duration-200">
         Harga Wajar &amp; Transparan
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
         Standar harga grosir &amp; eceran wajar tanpa biaya tersembunyi. Simulasi ongkos kirim dihitung transparan berdasarkan berat bersih dan regulasi pabean tujuan.
       </p>
-      <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold">
+      <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
         <span class="material-symbols-outlined text-[18px]">payments</span> Jujur &amp; Kompetitif
       </div>
     </div>
     <!-- Nilai 3: Pelayanan Ramah & Personal -->
-    <div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-start relative overflow-hidden group">
-      <div class="w-14 h-14 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform">
+    <div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-sm hover:shadow-2xl hover:-translate-y-2.5 transition-all duration-300 ease-out flex flex-col items-start relative overflow-hidden group border border-outline-variant/20 hover:border-primary/30 cursor-default">
+      <!-- Top Accent Bar -->
+      <div class="absolute top-0 inset-x-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+      <!-- Ambient Glow Bloom -->
+      <div class="absolute -right-8 -top-8 w-28 h-28 bg-primary/15 rounded-full blur-xl group-hover:scale-150 transition-all duration-500 pointer-events-none opacity-0 group-hover:opacity-100"></div>
+
+      <div class="w-14 h-14 rounded-2xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:rotate-6 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md transition-all duration-300">
         <span class="material-symbols-outlined text-[32px]">sentiment_satisfied</span>
       </div>
       <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider mb-1">Pilar 03</span>
-      <h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-xs">
+      <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary font-semibold mb-space-xs transition-colors duration-200">
         Pelayanan Ramah &amp; Personal
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
         Semangat toko kelontong di mana setiap pembeli dikenal layaknya tetangga sendiri. Layanan pelanggan kami sigap membantu konsultasi produk, pemilihan ekspedisi tercepat, hingga penyesuaian pesanan khusus.
       </p>
-      <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold">
+      <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
         <span class="material-symbols-outlined text-[18px]">chat</span> Respons Cepat via WhatsApp
       </div>
     </div>

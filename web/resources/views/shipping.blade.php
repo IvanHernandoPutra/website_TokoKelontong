@@ -184,52 +184,55 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
       <!-- Step 1 -->
-      <div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-xl shadow-sm relative">
+      <div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2.5 transition-all duration-300 ease-out relative overflow-hidden group border border-outline-variant/20 hover:border-primary/30">
+        <div class="absolute top-0 inset-x-0 h-1 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         <div class="flex items-center justify-between mb-space-md">
-          <span class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed font-headline-md flex items-center justify-center font-bold">
+          <span class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed font-headline-md flex items-center justify-center font-bold group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
             01
           </span>
-          <span class="material-symbols-outlined text-outline text-[28px]">search</span>
+          <span class="material-symbols-outlined text-outline text-[28px] group-hover:text-primary transition-colors">search</span>
         </div>
-        <h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs font-semibold">Pilih Produk di Katalog</h3>
+        <h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs font-semibold group-hover:text-primary transition-colors duration-200">Pilih Produk di Katalog</h3>
         <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
           Jelajahi 30+ pilihan makanan kering, bumbu rempah, snack nusantara, hingga kopi pilihan. Catat varian produk dan perkiraan jumlah yang diinginkan.
         </p>
-        <div class="mt-auto pt-space-sm flex items-center gap-space-2xs font-label-sm text-label-sm text-primary font-semibold">
+        <div class="mt-auto pt-space-sm flex items-center gap-space-2xs font-label-sm text-label-sm text-primary font-semibold group-hover:translate-x-1 transition-transform">
           <span class="material-symbols-outlined text-[16px]">check_circle</span>
           <span>Bebas pilih tanpa minimum order</span>
         </div>
       </div>
       <!-- Step 2 -->
-      <div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-xl shadow-sm relative">
+      <div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2.5 transition-all duration-300 ease-out relative overflow-hidden group border border-outline-variant/20 hover:border-secondary/30">
+        <div class="absolute top-0 inset-x-0 h-1 bg-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         <div class="flex items-center justify-between mb-space-md">
-          <span class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container font-headline-md flex items-center justify-center font-bold">
+          <span class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container font-headline-md flex items-center justify-center font-bold group-hover:scale-110 group-hover:-rotate-6 transition-transform duration-300">
             02
           </span>
-          <span class="material-symbols-outlined text-outline text-[28px]">chat</span>
+          <span class="material-symbols-outlined text-outline text-[28px] group-hover:text-secondary transition-colors">chat</span>
         </div>
-        <h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs font-semibold">Hubungi WhatsApp / Email</h3>
+        <h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs font-semibold group-hover:text-secondary transition-colors duration-200">Hubungi WhatsApp / Email</h3>
         <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
           Kirimkan daftar pesanan dan alamat tujuan Anda. Tim kami segera memverifikasi ketersediaan stok, menghitung ongkos kirim termurah, dan menerbitkan rincian invoice.
         </p>
-        <div class="mt-auto pt-space-sm flex items-center gap-space-2xs font-label-sm text-label-sm text-secondary font-semibold">
+        <div class="mt-auto pt-space-sm flex items-center gap-space-2xs font-label-sm text-label-sm text-secondary font-semibold group-hover:translate-x-1 transition-transform">
           <span class="material-symbols-outlined text-[16px]">schedule</span>
           <span>Respon cepat dalam hitungan menit</span>
         </div>
       </div>
       <!-- Step 3 -->
-      <div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-xl shadow-sm relative">
+      <div class="flex flex-col bg-surface-container-lowest p-space-xl rounded-2xl shadow-sm hover:shadow-2xl hover:-translate-y-2.5 transition-all duration-300 ease-out relative overflow-hidden group border border-outline-variant/20 hover:border-tertiary/30">
+        <div class="absolute top-0 inset-x-0 h-1 bg-tertiary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
         <div class="flex items-center justify-between mb-space-md">
-          <span class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed font-headline-md flex items-center justify-center font-bold">
+          <span class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed font-headline-md flex items-center justify-center font-bold group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
             03
           </span>
-          <span class="material-symbols-outlined text-outline text-[28px]">inventory_2</span>
+          <span class="material-symbols-outlined text-outline text-[28px] group-hover:text-tertiary transition-colors">inventory_2</span>
         </div>
-        <h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs font-semibold">Pembayaran &amp; Pengiriman</h3>
+        <h3 class="font-title-lg text-title-lg text-on-surface mb-space-xs font-semibold group-hover:text-tertiary transition-colors duration-200">Pembayaran &amp; Pengiriman</h3>
         <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
           Selesaikan pembayaran via transfer bank atau kartu. Paket Anda langsung dipacking dengan proteksi vakum dan double-wall box lalu diserahkan ke kurir ekspres.
         </p>
-        <div class="mt-auto pt-space-sm flex items-center gap-space-2xs font-label-sm text-label-sm text-tertiary font-semibold">
+        <div class="mt-auto pt-space-sm flex items-center gap-space-2xs font-label-sm text-label-sm text-tertiary font-semibold group-hover:translate-x-1 transition-transform">
           <span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
           <span>Nomor resi otomatis diberikan</span>
         </div>
