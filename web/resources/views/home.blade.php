@@ -27,18 +27,29 @@ Oleh-oleh khas Nusantara pilihan — snack, bumbu rempah, kopi, dan makanan keri
 <span>Info Pengiriman</span>
 </a>
 </div>
-<div class="grid grid-cols-3 gap-space-md pt-space-lg w-full max-w-lg">
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-primary font-bold">100%</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">UMKM Asli</span>
+<div class="grid grid-cols-3 gap-2.5 sm:gap-4 pt-space-lg w-full max-w-xl">
+<div class="p-3 sm:p-4 rounded-2xl bg-surface/90 backdrop-blur-sm border border-outline-variant/40 shadow-[0_4px_16px_-4px_rgba(84,46,26,0.06)] flex flex-col justify-center transition-all hover:-translate-y-0.5">
+<div class="flex items-center gap-1">
+<span class="font-display text-2xl sm:text-3xl lg:text-[34px] text-primary font-black tracking-tight leading-none">100%</span>
+<span class="material-symbols-outlined text-[18px] text-primary hidden sm:inline">verified</span>
 </div>
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-secondary font-bold">35+</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Negara Tujuan</span>
+<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">UMKM Asli</span>
+<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">Otentik Nusantara</span>
 </div>
-<div class="flex flex-col">
-<span class="font-headline-sm text-headline-sm text-tertiary font-bold">Food Grade</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Standar Ekspor</span>
+<div class="p-3 sm:p-4 rounded-2xl bg-surface/90 backdrop-blur-sm border border-outline-variant/40 shadow-[0_4px_16px_-4px_rgba(84,46,26,0.06)] flex flex-col justify-center transition-all hover:-translate-y-0.5">
+<div class="flex items-center gap-1">
+<span class="font-display text-2xl sm:text-3xl lg:text-[34px] text-secondary font-black tracking-tight leading-none">35+</span>
+<span class="material-symbols-outlined text-[18px] text-secondary hidden sm:inline">public</span>
+</div>
+<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">Negara Tujuan</span>
+<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">Ekspor Global</span>
+</div>
+<div class="p-3 sm:p-4 rounded-2xl bg-surface/90 backdrop-blur-sm border border-outline-variant/40 shadow-[0_4px_16px_-4px_rgba(84,46,26,0.06)] flex flex-col justify-center transition-all hover:-translate-y-0.5">
+<div class="flex items-center gap-1">
+<span class="font-display text-[17px] sm:text-2xl lg:text-[24px] text-tertiary font-black tracking-tight leading-none uppercase">Food Grade</span>
+</div>
+<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">Standar Ekspor</span>
+<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">Aman &amp; Halal</span>
 </div>
 </div>
 </div>
