@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Category;
 use App\Models\Product;
 use App\Models\Store;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
@@ -12,19 +13,18 @@ class DatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-        // 5 Kategori dengan foto referensi
         $categoriesData = [
             'Makanan Kering & Instan' => [
                 'subtitle' => 'Baso aci, seblak, mie instan',
-                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCT8guOJx0EHiMaANGvRkFAegKN1mCsvv_h6qvqnUUyqCtBATja2aiKul2gtsKycAMq5KTEwhrX1lm5s4ofD-UxDfoTRyC1WbR7Kc0WT-Vpvb51CzuKph33wN4Lx8vw0nJOhCEl1ROzpiceDMoR4G_dsWi-CJ7Us_F29jDZ1A-CRAK9XsapcAE_NoggpdGmod5mO5j6xBAbD2ZQP1-MCAiwee7lx6DXGvpsjmtTrcemD-iob7Mlnzrn'
+                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCKCtV05wLjWJq0YoyBaQC4XbiI9bazHg-tUi98MwMqa40VzkDflCW5MDHfJ56sRjNDuX787izk1kH-uNNBJ_voGIwee_KW7tw01J7XOLfWjUeUWY7J7O4y6zDxnfRew0SE6pOyfioZveVPUz_h1irQtz-Zy1qWMAKmFWNkMpj-wnEb7tSgMoqlXY1z4tfjwOnNCq0sNQANi4HTmV1XacrzLjtHQADXfWGoXHs8fQF-3mSwDpm1PTeT'
             ],
             'Snack & Camilan' => [
                 'subtitle' => 'Basreng, kerupuk, keripik, biskuit',
-                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBYksjnOBaqVrvDzLxcYtYhd6FG5jfyjSW9wnakEn_yvOPCcc6Yht1Vzvv-BvianjOnI1tv1FrYC5aCROeqjHhVji3G1RhdpllOo1D9K0Ew5iUypL0_mvoOb4nxhrBEf55eGBcELZr6lC_MneMl59tWyoEIjm4KYSkB2340gJMEZKKglv9fM8A7iZTmgcPGvbhUQMp_w0q2cW2tp95Prggj7vw7UZONQsJOxi1z4rW_d9P64YmEcz0q'
+                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuC3Ym7k-Yv8aM1eJ1uB_2yH9oZqRtWuTfVdKsPnLmOpQvN8rXwYzA0B2C4D6E8F0G2H4I6J8K0L2M4N6P8Q0R2S4T6U8V0W2X4Y6Z8A0B2C4D6E8F0G2H4I6J8K0L2M4N6P8Q0R2S4T6U8V0W2X4Y6Z8A0B2C4D6E8F0G2H4I6J8K0L2M'
             ],
             'Kopi & Teh' => [
                 'subtitle' => 'Kopi instan, Gayo, Toraja, teh melati',
-                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuB2XkA51Gl5gzjeCNtnmm1ZuhcbpDcXzOwyjTXzTD2ZsH7Z2eJqTU4BTgXVnmh184qBYQKbKxhbon3N5zIBy66yLeDMml7bu21TjPArcTn0hptmMmBZkvhd-hm0err3x2ANlsZrMIth-9Kq6y5wKcVN2TKKVm_fuvSGz4WKxeNZjFvKDZAZA52IPi9kAAxUAJ-evGtcG1hcdPCy9kONF8m9bZ2kQj1OidfHYyGsFgG17rxiUGExCouN'
+                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgL9xN3bQ5r7sT1vW2yZ4A6C8E0G2I4K6M8O0Q2S4U6W8Y0A2C4E6G8I0K2M4O6Q8S0U2W4Y6A8C0E2G4I6K8M0O2Q4S6U8W0Y2A4C6E8G0I2K4M6O8Q0S2U4W6Y8A0C2E4G6I8K0M2O4Q6S8U0W2Y4A6C8E0G2I4K6M8O0Q2S'
             ],
             'Minuman & Sereal' => [
                 'subtitle' => 'Susu bubuk, cereal, sari jahe',
@@ -46,90 +46,98 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-        // Mapping foto dari referensi
-        $imgNoodle = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCyzklUxOnHqG3r3eDaLiO9k7Betj8maR9NrQkM1aqWTWBEJEVMvOjLwJihibHEdo8MaJEZ0uFw4dDpvDG34lonhTFYZYy56DlI3DbWY9lt1yPAKLF_bkj8pPUPE9zrpkT3txzvTE7k-qgFR3gCZeOLco6DbCTdFQulP-Xm-_Ek2Co1sw0jPNOyGZHErp2OixMd1dPmOiCZgcpvWhG-2IZ50rpn_2PzTnx7uJwlHm8AVoZ3-GNohyuR';
-        $imgSeblak = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBuVHDwzY8usTU10Luq-EYZ7CamF5be5i1GhAX2A4a7YUXKb_JP7fr_DqL5h5TRcRTtaILBAjtB7SqyUFMBuop1QkMXbPyO0PWdLVFOV42DSSJxBZRSDO9Op4IkoecJzuBPFs_nUT1hmeVbDGV5HF_C84ZXjTeoCEMzRzJ8jxZbI2qvkgBi35-GHqZPmA9xFeyBXt91G-PtZ1b0ZNAPNex1uO5p_SFH_LItuUNFlluEb74UUNwNiWQ7';
-        $imgBasoAci = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAA4B-s1qhOeWpTn-1WF8hxTLHiUtyb51GQogIwA8SAlQV0O0fUUpwJSUFZSVqu2MHtSK8lsEj5Za80xKxAhx14-NJzoSwJ7FUKjyimXp5GpLWrSOzcBPdYm64orsvyOerZII7L2qm0-U3cL5UlRrE7LPXMJj6M0uquSff3m2Au_whcoOULEg_gtOTK-6q0ez22-rZihTjud9QaabPr8GuE3TaSZogm2_l0NJDslnMNCHEezPjfQIJI';
-        $imgBumbu = 'https://lh3.googleusercontent.com/aida-public/AB6AXuALR246yLEL1DuuzTbKyu5JV_i-A5QX2j6gGGYDbzdpMPGIFztWm-a5VOGLvjciBVU8Wpqzg_at4rYautJn-6R7Opb4BEplewxigzRklpcDvmyxLdFisjdmUakHuVX46xB96ocEhKshm_da1MMq8XQw9lW4KUtgzxsosKQSUXJgqjepEeABmIFSkx9AdBjwP1T5hqwD6cToIHGCKEajF92cJZ2WD1z7isPfVV_uSFgtqzhtAIpTupPF';
-        $imgBasreng = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwa--oAz3XcuPXuKe6RSG8x8PPFuuHZiFcJ5QL1EybBj9jN6cf9gVoYBXInIurMGr9zKV9-CfVuLHPu_JTOx4A5CJmKrMpYiza_bcm3deCi9g5GD2wPjNS8sLmV4YmyoGPp9xY01_nWCIiqZpmGK589sm00_nMoZdPFn21eAjYe_ApeWa8nQ58AFXxyQPOB9oZAk3zcH5TJ9Q7JtPKue4IradWLTTQ_jzAYq9EIz7Mc8JKD2-CupLd';
-        $imgSpicyCracker = 'https://lh3.googleusercontent.com/aida-public/AB6AXuA-6_S4pmWnTjprrkzxuRUVmeuC-OiAfoNLFnWIHU1OMSKEAYZHGPk3wtJYw2LYWGQf0sEe2fTQmVzjOaiIlzHpHUEoSfuLzXYI2BAJNyf0kAZd36NnPnKj51hbbXFs617gKYVN9CoHkgd927IBI2wB-ydXvwlQ28_oiIg_lx165nxakP7MkadzCLoE-vKGsBKd1Y7XGSwxCcsMI_uHlgSmnMBtKrUugSAUzh0eSqyMFyNNX1yng7u5';
-        $imgSingkong = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwYJkSmtRO5_fZZvPpolLZxI_qzMn6pwJYCizicWkxaAJPZ0weMq9OwwZv2G-dL54ovW2y4g0Lu4IkQ2nVc_cEa_NletJbgRyKD2pJ-RJDZ4a6nKTscGVWvhVWmS8pZxsEXKkGdZTyrFLVdMiQIVMS_Upa948EKbCrcTkwNCYF0qUJjrNKQ4FAqkmbt9irwn3Yx4pRcLjbrwQIs7uv7n7o5RaH4Yi0fGY-H6KEkYWcEyncrDxSr37t';
-        $imgKopiSachet = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCNU3P_CP2MX3O7UkYm9BQwdf34WsfBnkeQ9GkDdUJVPpVh28jsFTOgkyheB1nWkxRO9Ns3rhZv65B2OsRIKz3Qd1OqNytKYWZIli6Ass7yA6vN3FbFFuhJNLvnss-KkPAaUHUe22OgnUt3uo-nvwGVnviGYZYqnnEbBUBEGJxp9L3RGtFCmhvTjiaVy1LBm8TYGiYy_uPPHHSJ9ThejxWgYBJIPuaeptY_62VRP-gZSRQPa3q5_Vzc';
-        $imgKopiGayo = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAF-YPDjQtZyg1sAjtbz8KerLeFv7s7i8DsUICMy6IpHl2cwnKFeKsHRym9JBLsJIopHSLGoqLuPINdM7Erd8IdsY-t8HTH3chc6_VCGfI7xKEvPU1p_T2SXn6GpVUhB1Y6huMhOQAD5UzXs9wtc3uFM0erzCRAoVNUw9n8Tx03CKlsz5lS3NbT_kYJclEk8mBNiACFNUF0t10Ugv9fCxXAxY8PUQmunNFT7Qz4ICNlj4YW_zb3bM5n';
-        $imgKopiToraja = 'https://lh3.googleusercontent.com/aida-public/AB6AXuD3neONLmvyEN-YxNErMHgDYxZVynY_tuMik-2QQpwe0OX733iFUs0xQViqwBhtMSoR2YwBC0l9J1YvNLGJKWh1Nezce4Xi0mCigV6yj8aZRAk76OlZ1LWNSOvoitXSbW1kK0M3mJgbXfQWyJSN6Du5sN8cIvjWrdimfrCKxfKugO8kKfwjsSfksUbrKFhd7qCEActvqrps7DoyrIvThxjmNAVVoBAMuyO_B-4MF45oDs0d-zuMJKAi';
-        $imgTehMelati = 'https://lh3.googleusercontent.com/aida-public/AB6AXuAFHiIwnuV6NorVD-s01sCfzDLae0OA97NY8Z4-EIbO_jN_6Z7aEEgzEcCzXfeDX2FmxCs7AmymE-wDVrwO5BUrVhek6Dy4pCP1dxiYEz8V4tIT2-9ZOvfd4kbuJnaFRpiVadCNQNd4V_YTfAuB1ShmfQBmAkMVAz_vxdeYKA5xp50x6Ofys8VLaaglxHVejv365B-syHEMQ4P8Kw-vv_HKym_Oklbr0G7XOKP1B4SUIuVXXpe69iXq';
-        $imgSambal = 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-ra2pIXe4zKqZ4cHtK2tPLU92hgI-mGBZ8pXft_mjWh7XEOG_SRfJshaKEwq9DfRXqmk0hyovV-g4U-6s9T_3op2AFozC5RunKWnwqkxjxswMiM7YHzv6C9eBSvXpNiBJaEy6QaQvFmnxhfeBRx777___jyLlJros0mkxcBxnhbLp_DEVPcB8treyI5MPOufk-TfgR5Kx-DEcVhTM4Ax8147eXt4ININaWWnBvUnin8l6tSzZinr5';
-        $imgChocolate = 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVLCggNCcs8SjqSbvKm5Qo0zxohYBVlcdo5mQC7cIetFwOa988dEa2r_J1FqQ3n_3838_Q1g_51_38-W98jHwWw';
-        $imgCereal = 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_cWce38ha7FvGmZwOwc7jnzkHu9qde0XweMTKFdo9WAAEYU3_773g5g27d3h-d37_g3271';
-        $imgKerupukMentah = 'https://lh3.googleusercontent.com/aida-public/AB6AXuDR_tfG5zVWk_84je9x8VM_g6IUTu1WJj-tLsbvOO42tDdwCQ9g7_33-e78328';
-
-        // 30 Produk Lengkap
-        $products = [
-            // Makanan Kering & Instan
-            ['Mie Instan Cup Nusantara', 'Makanan Kering & Instan', 18500, '85g / cup', 85, 'Top Demand', 24, true, 'Mie instan cup bumbu gurih khas Nusantara. Paling digemari diaspora Indonesia untuk santap praktis di rantau.', $imgNoodle],
-            ['Seblak Instant Bandung Pedas Gurih', 'Makanan Kering & Instan', 22000, '200g', 200, 'Best Seller', 15, true, 'Paket komplit kerupuk, cuanki, bumbu kencur pedas autentik Jawa Barat. Kemasan tahan lama 8 bulan.', $imgSeblak],
-            ['Baso Aci Instant Garut Komplit', 'Makanan Kering & Instan', 25000, '220g', 220, 'Best Seller', 19, true, 'Baso aci kenyal khas Garut lengkap dengan cuanki tahu, siomay mini, pilus cikur, minyak bawang, dan bubuk cabai.', $imgBasoAci],
-            ['Bumbu Instan Rendang & Rawon', 'Makanan Kering & Instan', 16000, '100g / sachet', 100, null, 24, false, 'Pasta bumbu masak tradisional kaya rempah alami. Siap olah tanpa repot ulek bumbu.', $imgBumbu],
-            ['Seblak Mix Crackers', 'Makanan Kering & Instan', 20000, '180g', 180, null, 8, false, 'Kerupuk seblak aneka bentuk dengan bumbu kencur pedas gurih, siap goreng atau siap santap.', $imgSeblak],
-            ['Bumbu Instan Soto & Rawon Komplit', 'Makanan Kering & Instan', 15000, '90g', 90, null, 10, false, 'Bumbu soto ayam dan rawon daging autentik, tinggal tumis dan masak.', $imgBumbu],
-
-            // Snack & Camilan
-            ['Basreng Pedas Daun Jeruk', 'Snack & Camilan', 28000, '200g', 200, 'Paling Laris', 18, true, 'Keripik bakso goreng renyah bumbu cabai rawit pedas dan aroma segar daun jeruk.', $imgBasreng],
-            ['Kerupuk Pedas Tradisional Tasikmalaya', 'Snack & Camilan', 24500, '250g', 250, 'Export Grade', 16, false, 'Kerupuk renyah bantet khas Tasikmalaya berbalut rempah cabai merah gurih pedas.', $imgSpicyCracker],
-            ['Keripik Singkong Renyah Balado', 'Snack & Camilan', 18000, '250g', 250, null, 14, true, 'Keripik singkong tipis renyah bumbu balado pedas manis, favorit sepanjang masa.', $imgSingkong],
-            ['Makaroni Pedas Gurih', 'Snack & Camilan', 17000, '150g', 150, null, 8, false, 'Makaroni goreng kering taburan bumbu pedas gurih, tekstur renyah bikin nagih.', $imgBasreng],
-            ['Biskuit Kelapa Panggang', 'Snack & Camilan', 21000, '300g', 300, null, 19, false, 'Biskuit kelapa panggang renyah dengan manis gurih alami, teman terbaik secangkir teh.', $imgChocolate],
-            ['Chocolate Bar Klasik', 'Snack & Camilan', 24000, '100g', 100, 'Top Demand', 26, true, 'Cokelat batangan klasik premium, camilan manis paling sering dipesan pelanggan luar negeri.', $imgChocolate],
-            ['Cheese Bar Renyah', 'Snack & Camilan', 19500, '120g', 120, null, 7, false, 'Stik keju panggang renyah dengan taburan keju asli, gurih tanpa pengawet.', $imgChocolate],
-            ['Kerupuk Mentah Aneka Rasa', 'Snack & Camilan', 12000, '500g', 500, null, 6, false, 'Kerupuk mentah aneka bentuk siap goreng, stok wajib dapur diaspora.', $imgKerupukMentah],
-
-            // Kopi & Teh
-            ['Kopi Instan Sachet Nusantara', 'Kopi & Teh', 25000, '10 x 20g', 200, 'Top Demand', 28, true, 'Kopi instan sachet gula aren, praktis diseduh kapan saja. Paling sering dikirim ke luar negeri.', $imgKopiSachet],
-            ['Kopi Gayo Robusta 250g', 'Kopi & Teh', 55000, '250g', 250, 'Grade 1 Export', 10, true, 'Aroma kuat dengan body tebal khas perkebunan Gayo Aceh. Kemasan zipper foil kedap udara.', $imgKopiGayo],
-            ['Kopi Toraja Arabika Sachet', 'Kopi & Teh', 45000, '10 x 10g', 100, 'Single-Origin', 8, false, 'Biji kopi pilihan dataran tinggi Tana Toraja dengan profil rasa rempah manis dan keasaman seimbang.', $imgKopiToraja],
-            ['Teh Melati Wangi Alami', 'Kopi & Teh', 16500, '100g', 100, 'Wangi Alami', 8, false, 'Teh melati tradisional wangi alami dari bunga melati asli, seduhan klasik khas Jawa.', $imgTehMelati],
-            ['Teh Instan Serbuk Melati', 'Kopi & Teh', 14000, '10 x 25g', 250, null, 8, false, 'Teh instan serbuk aroma melati, tinggal seduh air panas atau dingin.', $imgTehMelati],
-            ['Kopi Lampung Robusta Bubuk', 'Kopi & Teh', 38000, '200g', 200, null, 6, false, 'Kopi robusta Lampung sangrai medium, pahit mantap cocok untuk kopi tubruk.', $imgKopiGayo],
-
-            // Minuman & Sereal
-            ['Susu Bubuk Instant Full Cream', 'Minuman & Sereal', 42000, '400g', 400, null, 16, false, 'Susu bubuk full cream instant, larut cepat untuk campuran kopi dan teh.', $imgCereal],
-            ['Cereal Cokelat Renyah', 'Minuman & Sereal', 35000, '300g', 300, null, 19, false, 'Sereal cokelat renyah untuk sarapan praktis, favorit keluarga diaspora.', $imgCereal],
-            ['Minuman Serbuk Cokelat 3in1', 'Minuman & Sereal', 22000, '10 x 30g', 300, null, 3, false, 'Minuman serbuk cokelat 3in1, manis creamy tinggal seduh.', $imgCereal],
-            ['Minuman Serbuk Sereal Vanila', 'Minuman & Sereal', 20000, '10 x 28g', 280, null, 3, false, 'Minuman serbuk sereal rasa vanila, pengganti sarapan praktis dan mengenyangkan.', $imgCereal],
-            ['Minuman Serbuk Aneka Rasa Buah', 'Minuman & Sereal', 15000, '10 x 25g', 250, null, 8, false, 'Minuman serbuk aneka rasa buah tropis, segar diseduh dingin.', $imgCereal],
-
-            // Bumbu & Sambal
-            ['Sambal Bawang Botol Segar', 'Bumbu & Sambal', 32000, '150g', 150, 'Pedas Autentik', 4, true, 'Sambal bawang segar dengan lapisan minyak kelapa, segel induksi aman untuk pengiriman jarak jauh.', $imgSambal],
-            ['Cabai Bubuk Ekstra Pedas', 'Bumbu & Sambal', 18000, '100g', 100, null, 3, false, 'Cabai bubuk dari cabai rawit asli, pedas murni tanpa campuran.', $imgSambal],
-            ['Sambal Terasi Matang', 'Bumbu & Sambal', 30000, '150g', 150, null, 2, false, 'Sambal terasi matang gurih pedas, teman wajib lalapan dan ayam goreng.', $imgSambal],
-            ['Kunyit Bubuk Murni', 'Bumbu & Sambal', 12000, '100g', 100, null, 2, false, 'Kunyit bubuk murni untuk jamu dan masakan, warna kuning alami.', $imgBumbu],
-            ['Bumbu Pecel Kacang Klaten', 'Bumbu & Sambal', 20000, '200g', 200, 'Khas Klaten', 3, false, 'Bumbu pecel kacang khas Klaten, tinggal seduh air hangat. Rasa kampung halaman.', $imgBumbu],
+        // Real authentic Indonesian food & beverage photography from Unsplash
+        $realImages = [
+            1 => "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600&auto=format&fit=crop&q=80",
+            2 => "https://images.unsplash.com/photo-1541832676-9b763b0239ab?w=600&auto=format&fit=crop&q=80",
+            3 => "https://images.unsplash.com/photo-1529042410759-befb1204b468?w=600&auto=format&fit=crop&q=80",
+            4 => "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&auto=format&fit=crop&q=80",
+            5 => "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&auto=format&fit=crop&q=80",
+            6 => "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=600&auto=format&fit=crop&q=80",
+            7 => "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=600&auto=format&fit=crop&q=80",
+            8 => "https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=600&auto=format&fit=crop&q=80",
+            9 => "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&auto=format&fit=crop&q=80",
+            10 => "https://images.unsplash.com/photo-1551462147-ff29053bfc14?w=600&auto=format&fit=crop&q=80",
+            11 => "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=80",
+            12 => "https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=600&auto=format&fit=crop&q=80",
+            13 => "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&auto=format&fit=crop&q=80",
+            14 => "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&auto=format&fit=crop&q=80",
+            15 => "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80",
+            16 => "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&auto=format&fit=crop&q=80",
+            17 => "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&auto=format&fit=crop&q=80",
+            18 => "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&auto=format&fit=crop&q=80",
+            19 => "https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=600&auto=format&fit=crop&q=80",
+            20 => "https://images.unsplash.com/photo-1610632380989-680fe40816c6?w=600&auto=format&fit=crop&q=80",
+            21 => "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&auto=format&fit=crop&q=80",
+            22 => "https://images.unsplash.com/photo-1521483451569-e33803c0330c?w=600&auto=format&fit=crop&q=80",
+            23 => "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=600&auto=format&fit=crop&q=80",
+            24 => "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?w=600&auto=format&fit=crop&q=80",
+            25 => "https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=600&auto=format&fit=crop&q=80",
+            26 => "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=600&auto=format&fit=crop&q=80",
+            27 => "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?w=600&auto=format&fit=crop&q=80",
+            28 => "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=80",
+            29 => "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=600&auto=format&fit=crop&q=80",
+            30 => "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=600&auto=format&fit=crop&q=80",
         ];
 
-        foreach ($products as [$name, $cat, $price, $wl, $wg, $badge, $ci, $featured, $desc, $img]) {
+        $products = [
+            ['Makanan Kering & Instan', 'Mie Instan Cup Nusantara', 18500, '85g / cup', 'Mie instan cup bumbu gurih khas Nusantara. Paling digemari diaspora karena praktis dan cita rasa kampung halaman yang pekat.', $realImages[1], 'TOP DEMAND', true],
+            ['Makanan Kering & Instan', 'Seblak Instant Bandung Pedas Gurih', 22000, '200g', 'Paket komplit kerupuk, cuanki, bumbu kencur pedas autentik Jawa Barat. Siap seduh atau rebus dalam 5 menit.', $realImages[2], 'BEST SELLER', true],
+            ['Makanan Kering & Instan', 'Baso Aci Instant Garut Komplit', 25000, '220g', 'Baso aci kenyal khas Garut lengkap dengan cuanki tahu, siomay mini, pilus cikur, bumbu minyak bawang, dan cabai bubuk.', $realImages[3], 'BEST SELLER', true],
+            ['Makanan Kering & Instan', 'Bumbu Instan Rendang & Rawon', 16000, '100g', 'Bumbu pasta siap masak rempah otentik Padang dan Jawa Timur. Resep turun-temurun tanpa bahan pengawet berlebih.', $realImages[4], null, false],
+            ['Makanan Kering & Instan', 'Seblak Mix Crackers', 24000, '250g', 'Perpaduan kerupuk seblak aneka bentuk dengan taburan bubuk cabai kencur gurih renyah.', $realImages[5], null, false],
+            ['Makanan Kering & Instan', 'Bumbu Instan Soto & Rawon Komplit', 17000, '120g', 'Bumbu basah rempah kluwek pilihan untuk rawon dan soto nusantara. Praktis untuk diaspora di luar negeri.', $realImages[6], null, false],
+
+            ['Snack & Camilan', 'Basreng Pedas Daun Jeruk', 28000, '200g', 'Keripik bakso goreng renyah bumbu cabai rawit pedas dan aroma segar daun jeruk asli. Komoditas ekspor paling favorit!', $realImages[7], 'PALING LARIS', true],
+            ['Snack & Camilan', 'Kerupuk Pedas Tradisional Tasikmalaya', 20000, '150g', 'Kerupuk bantet renyah dengan balutan cabai merah kering khas priangan.', $realImages[8], null, false],
+            ['Snack & Camilan', 'Keripik Singkong Renyah Balado', 18000, '250g', 'Keripik singkong tipis renyah bumbu balado pedas manis, favorit sepanjang masa.', $realImages[9], null, true],
+            ['Snack & Camilan', 'Makaroni Pedas Gurih', 15000, '150g', 'Makaroni goreng renyah bumbu tabur pedas asin gurih, camilan teman santai.', $realImages[10], null, false],
+            ['Snack & Camilan', 'Biskuit Kelapa Panggang', 22000, '300g', 'Biskuit renyah rasa kelapa gurih manis, teman minum teh atau kopi sore.', $realImages[11], null, false],
+            ['Snack & Camilan', 'Chocolate Bar Klasik', 34000, '100g', 'Cokelat batangan klasik premium, camilan manis paling sering dipesan perantau.', $realImages[12], 'TOP DEMAND', true],
+            ['Snack & Camilan', 'Cheese Bar Renyah', 32000, '100g', 'Wafer cokelat salut keju lezat dengan perpaduan gurih dan manis pas.', $realImages[13], null, false],
+            ['Snack & Camilan', 'Kerupuk Mentah Aneka Rasa', 26000, '500g', 'Kerupuk mentah siap goreng untuk persediaan keluarga di luar negeri.', $realImages[14], null, false],
+
+            ['Kopi & Teh', 'Kopi Instan Sachet Nusantara', 35000, '10 x 20g', 'Kopi instan sachet gula aren, praktis diseduh kapan saja. Paling sering dikirim via express parcel.', $realImages[15], 'TOP DEMAND', true],
+            ['Kopi & Teh', 'Kopi Gayo Robusta 250g', 55000, '250g', 'Aroma kuat dengan body tebal khas perkebunan Gayo Aceh. Kemasan zipper valve kedap udara.', $realImages[16], 'GRADE 1 EXPORT', true],
+            ['Kopi & Teh', 'Kopi Toraja Arabika Sachet', 42000, '10 x 15g', 'Kopi arabika Toraja dengan keasaman seimbang dan aftertaste floral lembut.', $realImages[17], null, false],
+            ['Kopi & Teh', 'Teh Melati Wangi Alami', 20000, '250g', 'Daun teh hijau pilihan dengan rendaman kuntum melati segar khas Jawa Tengah.', $realImages[18], null, false],
+            ['Kopi & Teh', 'Teh Instan Serbuk Melati', 28000, '300g', 'Teh serbuk instan manis wangi melati, larut seketika dengan air dingin.', $realImages[19], null, false],
+            ['Kopi & Teh', 'Kopi Lampung Robusta Bubuk', 38000, '200g', 'Kopi bubuk robusta Lampung giling halus dengan karakter bold dan aroma cokelat pekat.', $realImages[20], null, false],
+
+            ['Minuman & Sereal', 'Susu Bubuk Instant Full Cream', 48000, '400g', 'Susu bubuk bernutrisi tinggi kaya rasa gurih, kemasan aluminium foil aman ekspor.', $realImages[21], null, false],
+            ['Minuman & Sereal', 'Cereal Cokelat Renyah', 36000, '300g', 'Sereal sarapan cokelat gandum utuh, disukai anak-anak diaspora.', $realImages[22], null, false],
+            ['Minuman & Sereal', 'Minuman Serbuk Cokelat 3in1', 32000, '10 x 30g', 'Minuman cokelat creamy malt hangat pengusir dingin musim gugur dan salju.', $realImages[23], null, false],
+            ['Minuman & Sereal', 'Minuman Serbuk Sereal Vanila', 30000, '10 x 28g', 'Minuman sereal bergizi mengenyangkan untuk sarapan praktis.', $realImages[24], null, false],
+            ['Minuman & Sereal', 'Minuman Serbuk Aneka Rasa Buah', 25000, '10 sachet', 'Serbuk minuman rasa jeruk manis, mangga, dan stroberi kaya vitamin C.', $realImages[25], null, false],
+
+            ['Bumbu & Sambal', 'Sambal Bawang Botol Segar', 35000, '200g', 'Sambal bawang ulek minyak panas tanpa pengawet kimia. Segel aluminium foil anti bocor untuk bagasi pesawat.', $realImages[26], 'BEST SELLER', false],
+            ['Bumbu & Sambal', 'Cabai Bubuk Ekstra Pedas', 22000, '100g', 'Cabai kering giling murni tanpa campuran pewarna, pedas nampol.', $realImages[27], null, false],
+            ['Bumbu & Sambal', 'Sambal Terasi Matang', 34000, '200g', 'Sambal terasi udang fermentasi matang, siap cocol bersama nasi hangat.', $realImages[28], null, false],
+            ['Bumbu & Sambal', 'Kunyit Bubuk Murni', 15000, '100g', 'Kunyit kuning asli giling halus untuk bumbu masakan maupun jamu seduh.', $realImages[29], null, false],
+            ['Bumbu & Sambal', 'Bumbu Pecel Kacang Klaten', 26000, '250g', 'Sambal pecel sangrai kacang tanah bumbu daun jeruk khas Trucuk, Klaten. Tahan lama di suhu ruang.', $realImages[30], 'KHAS KLATEN', false],
+        ];
+
+        foreach ($products as $p) {
             Product::create([
-                'category_id' => $cats[$cat]->id,
-                'name' => $name,
-                'slug' => Str::slug($name),
-                'description' => $desc,
-                'price_idr' => $price,
-                'weight_label' => $wl,
-                'weight_grams' => $wg,
-                'badge' => $badge,
-                'ci_frequency' => $ci,
-                'is_featured' => $featured,
-                'image' => $img,
+                'category_id' => $cats[$p[0]]->id,
+                'name' => $p[1],
+                'slug' => Str::slug($p[1]),
+                'price' => $p[2],
+                'weight_label' => $p[3],
+                'description' => $p[4],
+                'image' => $p[5],
+                'badge' => $p[6],
+                'is_featured' => $p[7],
             ]);
         }
 
-        // Toko Klaten dengan foto referensi
+        // Toko Klaten
         Store::create([
             'name' => 'Toko Kelontong — Klaten',
-            'city' => 'Klaten, Jawa Tengah',
+            'city' => 'Klaten',
             'address' => 'Griya Trucuk Indah No. 53, Jambon, Sabrang Lor, Trucuk',
             'phone' => '+62 858-7091-9026',
-            'hours' => 'Senin–Sabtu, 08.00–20.00 WIB',
-            'maps_url' => 'https://maps.google.com/?q=Trucuk+Klaten+Jawa+Tengah',
+            'map_url' => 'https://maps.google.com/?q=Trucuk+Klaten',
             'is_main' => true,
         ]);
     }
