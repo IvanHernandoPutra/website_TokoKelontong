@@ -107,9 +107,9 @@ Oleh-oleh khas Nusantara pilihan — snack, bumbu rempah, kopi, dan makanan keri
 <p class="font-body-md text-body-md text-on-surface-variant max-w-md">Pilih ragam santapan khas dari lima kelompok komoditas favorit diaspora dan pecinta kuliner Indonesia.</p>
 </div>
 <!-- Carousel on mobile (< md), grid on tablet & desktop (>= md) -->
-<div class="flex md:grid md:grid-cols-3 lg:grid-cols-5 gap-space-md overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-4 md:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0">
+<div class="flex md:grid md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-4 md:pb-0 -mx-4 px-[12.5vw] md:mx-0 md:px-0 scrollbar-none">
 @foreach ($categories as $cat)
-<a class="group relative aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-end p-space-md bg-surface-container shrink-0 w-[68vw] sm:w-[45vw] md:w-auto snap-start" href="{{ route('products', ['kategori' => $cat->slug]) }}">
+<a class="group relative aspect-[3/4] rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-end p-space-md bg-surface-container shrink-0 w-[75vw] sm:w-[45vw] md:w-auto snap-center" href="{{ route('products', ['kategori' => $cat->slug]) }}">
 @if($cat->image)
 <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="{{ $cat->name }}" src="{{ $cat->image }}"/>
 @endif
@@ -141,9 +141,9 @@ Oleh-oleh khas Nusantara pilihan — snack, bumbu rempah, kopi, dan makanan keri
 </a>
 </div>
 <!-- Carousel on mobile (< sm), grid on tablet & desktop (>= sm) -->
-<div class="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-space-lg overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0">
+<div class="flex sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-space-lg overflow-x-auto sm:overflow-visible snap-x snap-mandatory pb-4 sm:pb-0 -mx-4 px-[12vw] sm:mx-0 sm:px-0 scrollbar-none">
 @foreach ($featured as $product)
-<div class="shrink-0 w-[78vw] sm:w-auto snap-start flex">
+<div class="shrink-0 w-[76vw] sm:w-auto snap-center flex">
 @include('partials.product-card')
 </div>
 @endforeach
