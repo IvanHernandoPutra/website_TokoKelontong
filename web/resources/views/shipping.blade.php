@@ -299,144 +299,376 @@
 <!-- Interactive Shipping Calculator & CTA Section -->
 <section class="w-full py-space-4xl px-gutter-desktop bg-surface-container-lowest" id="form-cek-ongkir">
   <div class="max-w-container-max mx-auto">
-    <div class="bg-surface-container-low rounded-2xl p-space-xl md:p-space-3xl shadow-lg flex flex-col lg:flex-row gap-space-3xl items-center">
-      <!-- CTA Copy & Direct WhatsApp Link -->
-      <div class="w-full lg:w-1/2 flex flex-col gap-space-md">
-        <span class="font-label-md text-label-md text-primary font-bold uppercase tracking-widest">Kalkulasi Cepat &amp; Akurat</span>
-        <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Cek Estimasi Biaya Kirim ke Negara Anda</h2>
-        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-          Ingin memesan partai eceran keluarga atau pasokan grosir untuk restoran Indonesia di luar negeri? Tim kami siap memberikan simulasi ongkos kirim paling ekonomis tanpa ikatan transaksi.
+    <div class="bg-surface-container-low rounded-2xl p-space-lg md:p-space-3xl shadow-lg flex flex-col lg:flex-row gap-space-2xl lg:gap-space-3xl items-start">
+      <!-- CTA Copy & Direct Contact Info (Left Column) -->
+      <div class="w-full lg:w-5/12 flex flex-col gap-space-md lg:sticky lg:top-32">
+        <div class="inline-flex items-center gap-space-2xs px-space-sm py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm uppercase tracking-wider font-bold w-fit">
+          <span class="material-symbols-outlined text-[16px]">calculate</span>
+          <span>Kalkulasi Cepat &amp; Akurat</span>
+        </div>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold leading-tight">
+          Cek Estimasi Biaya &amp; Durasi Pengiriman
+        </h2>
+        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Pilih jalur pengiriman Anda — baik distribusi domestik antar kota di Indonesia maupun pengiriman udara ekspres internasional untuk keluarga atau diaspora di luar negeri.
         </p>
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
-          <a class="inline-flex items-center justify-center gap-space-2xs bg-primary hover:bg-primary-container text-on-primary font-title-md px-space-xl py-space-sm rounded-xl shadow-md transition-all text-center" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Admin Toko Kelontong, saya ingin konsultasi pengiriman dan cek ongkos kirim.') }}" rel="noopener noreferrer" target="_blank">
-            <span class="material-symbols-outlined text-[22px]">chat</span>
-            Konsultasi Pengiriman via WhatsApp
+
+        <!-- Guarantee Checklist -->
+        <div class="flex flex-col gap-space-xs py-space-xs">
+          <div class="flex items-center gap-2 text-on-surface font-body-sm">
+            <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+            <span>Bebas tanya &amp; konsultasi tarif tanpa komitmen</span>
+          </div>
+          <div class="flex items-center gap-2 text-on-surface font-body-sm">
+            <span class="material-symbols-outlined text-secondary text-[18px]">package_2</span>
+            <span>Standar kardus ganda tebal &amp; proteksi vakum</span>
+          </div>
+          <div class="flex items-center gap-2 text-on-surface font-body-sm">
+            <span class="material-symbols-outlined text-secondary text-[18px]">receipt_long</span>
+            <span>Deklarasi bea cukai resmi CV. Bertiga Tradexa</span>
+          </div>
+        </div>
+
+        <!-- Quick Contacts -->
+        <div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm pt-space-xs">
+          <a class="inline-flex items-center justify-center gap-space-2xs bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container font-title-md px-space-lg py-space-sm rounded-xl shadow-md transition-all text-center" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Admin Toko Kelontong, saya ingin konsultasi seputar pengiriman produk.') }}" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[20px]">chat</span>
+            Hubungi CS WhatsApp
           </a>
           <a class="inline-flex items-center justify-center gap-space-2xs bg-surface-container-highest hover:bg-surface-container text-on-surface font-title-md px-space-lg py-space-sm rounded-xl transition-all text-center" href="mailto:{{ config('toko.email') }}?subject=Inquiry%20Pengiriman%20Toko%20Kelontong">
             <span class="material-symbols-outlined text-[20px]">mail</span>
             Kirim Email
           </a>
         </div>
-        <div class="flex items-center gap-space-md pt-space-sm text-on-surface-variant font-label-sm text-label-sm">
-          <span class="flex items-center gap-1">
-            <span class="material-symbols-outlined text-secondary text-[16px]">check</span> Bebas Tanya
-          </span>
-          <span class="flex items-center gap-1">
-            <span class="material-symbols-outlined text-secondary text-[16px]">check</span> Respon Ramah
-          </span>
-          <span class="flex items-center gap-1">
-            <span class="material-symbols-outlined text-secondary text-[16px]">check</span> Dukungan Bahasa ID &amp; EN
-          </span>
-        </div>
       </div>
-      <!-- Quick Estimation Simulator Form -->
-      <div class="w-full lg:w-1/2 bg-surface-container-lowest rounded-xl p-space-xl shadow-md flex flex-col gap-space-md">
-        <div class="flex items-center justify-between pb-space-xs">
+
+      <!-- Simulator Form Card (Right Column) -->
+      <div class="w-full lg:w-7/12 bg-surface-container-lowest rounded-2xl p-space-md sm:p-space-xl shadow-md border border-outline-variant/30 flex flex-col gap-space-md">
+        <!-- Form Header -->
+        <div class="flex items-center justify-between pb-space-2xs border-b border-outline-variant/20">
           <div>
-            <h3 class="font-title-lg text-title-lg text-on-surface font-semibold">Simulasi Estimasi Biaya</h3>
-            <p class="font-body-sm text-body-sm text-on-surface-variant">Hitung perkiraan durasi &amp; layanan pengiriman</p>
+            <h3 class="font-title-lg text-title-lg text-on-surface font-bold">Simulasi Pengiriman</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant">Pilih jenis tujuan untuk melihat formulir spesifik</p>
           </div>
           <span class="material-symbols-outlined text-primary text-[28px]">local_shipping</span>
         </div>
-        <form class="flex flex-col gap-space-sm" id="shippingSimulator" onsubmit="event.preventDefault(); calculateShipping();">
+
+        <!-- Segmented Tab Selector (Domestik vs Internasional) -->
+        <div class="grid grid-cols-2 gap-space-2xs bg-surface-container-low p-1 rounded-xl border border-outline-variant/20">
+          <button type="button" id="tabDomestikBtn" onclick="switchShippingTab('domestic')" class="flex items-center justify-center gap-2 py-space-xs px-space-sm rounded-lg font-title-md text-title-md transition-all duration-200 bg-secondary text-on-secondary shadow-sm">
+            <span class="text-xl">🇮🇩</span>
+            <span class="font-bold text-sm sm:text-base">Domestik RI</span>
+          </button>
+          <button type="button" id="tabIntlBtn" onclick="switchShippingTab('intl')" class="flex items-center justify-center gap-2 py-space-xs px-space-sm rounded-lg font-title-md text-title-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container">
+            <span class="text-xl">🌏</span>
+            <span class="font-bold text-sm sm:text-base">Internasional</span>
+          </button>
+        </div>
+
+        <!-- FORM 1: DOMESTIK INDONESIA -->
+        <form id="formDomestik" onsubmit="event.preventDefault(); calcDomestic();" class="flex flex-col gap-space-md">
+          <!-- Info Asal Pengiriman -->
+          <div class="bg-surface-container-low px-space-md py-space-xs rounded-xl flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm border border-outline-variant/20">
+            <span class="material-symbols-outlined text-secondary text-[18px]">store</span>
+            <span><strong>Asal Kirim:</strong> Hub Pusat Toko Kelontong, Klaten, Jawa Tengah (57467)</span>
+          </div>
+
+          <!-- Wilayah Tujuan Domestik -->
           <div class="flex flex-col gap-1">
-            <label class="font-label-md text-label-md text-on-surface font-medium" for="destType">Tipe Tujuan Pengiriman</label>
-            <select class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" id="destType" onchange="updateCountryOptions()">
-              <option value="domestic">🇮🇩 Domestik Indonesia (Antar Kota / Pulau)</option>
-              <option value="intl">🌏 Internasional (Asia, Eropa, Australia, AS)</option>
+            <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="domRegion">
+              <span>Provinsi / Wilayah Tujuan</span>
+              <span class="text-secondary font-normal text-xs">Pilih jangkauan pulau</span>
+            </label>
+            <select id="domRegion" class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface outline-none focus:ring-2 focus:ring-secondary border border-outline-variant/30">
+              <option value="jawa_tengah">Jawa Tengah &amp; DI Yogyakarta (Semarang, Solo, Jogja, dll.)</option>
+              <option value="jabodetabek">Jabodetabek &amp; Banten (Jakarta, Bogor, Depok, Tangerang, Bekasi)</option>
+              <option value="jawa_barat">Jawa Barat (Bandung, Cirebon, Tasikmalaya, dll.)</option>
+              <option value="jawa_timur">Jawa Timur (Surabaya, Malang, Sidoarjo, Jember, dll.)</option>
+              <option value="bali_nt">Bali &amp; Nusa Tenggara (Denpasar, Mataram, Kupang)</option>
+              <option value="sumatera">Sumatera (Medan, Palembang, Pekanbaru, Bandar Lampung, Padang)</option>
+              <option value="kalimantan">Kalimantan (Balikpapan, Pontianak, Samarinda, Banjarmasin)</option>
+              <option value="sulawesi">Sulawesi (Makassar, Manado, Palu, Kendari)</option>
+              <option value="maluku_papua">Maluku &amp; Papua (Ambon, Jayapura, Sorong)</option>
             </select>
           </div>
-          <div class="flex flex-col gap-1" id="countryWrapper">
-            <label class="font-label-md text-label-md text-on-surface font-medium" for="destLocation">Negara / Kota Tujuan</label>
-            <input class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface placeholder:text-outline outline-none focus:ring-2 focus:ring-primary" id="destLocation" placeholder="Contoh: Surabaya, Jakarta Barat, Medan, Denpasar" required="" type="text"/>
+
+          <!-- Kota / Kecamatan Presisi -->
+          <div class="flex flex-col gap-1">
+            <label class="font-label-md text-label-md text-on-surface font-semibold" for="domCity">Kota / Kabupaten / Kecamatan Penerima</label>
+            <input type="text" id="domCity" placeholder="Contoh: Surabaya Gubeng, Jakarta Selatan, atau Medan Baru" required class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface placeholder:text-outline outline-none focus:ring-2 focus:ring-secondary border border-outline-variant/30"/>
           </div>
-          <div class="grid grid-cols-2 gap-space-sm">
+
+          <!-- Pilihan Layanan & Berat (Stacked on Mobile, 2 Col on Tablet+) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
             <div class="flex flex-col gap-1">
-              <label class="font-label-md text-label-md text-on-surface font-medium" for="weightKg">Perkiraan Berat Total</label>
-              <select class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" id="weightKg">
-                <option value="1">1 - 2 Kg (Camilan / Bumbu)</option>
-                <option value="3">3 - 5 Kg (Paket Sedang)</option>
-                <option value="6">6 - 10 Kg (Stok Bulanan)</option>
-                <option value="10">&gt; 10 Kg (Grosir / Resto)</option>
+              <label class="font-label-md text-label-md text-on-surface font-semibold" for="domService">Pilihan Layanan</label>
+              <select id="domService" class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface outline-none focus:ring-2 focus:ring-secondary border border-outline-variant/30">
+                <option value="reguler">⚡ Reguler Kilat (1 – 3 Hari)</option>
+                <option value="cargo">📦 Kargo Hemat (&ge; 5 Kg Partai Besar)</option>
               </select>
             </div>
             <div class="flex flex-col gap-1">
-              <label class="font-label-md text-label-md text-on-surface font-medium" for="productType">Kategori Makanan</label>
-              <select class="bg-surface-container-low p-space-sm rounded-lg font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary" id="productType">
-                <option value="dry">Makanan Kering / Snack</option>
-                <option value="sauce">Bumbu / Sambal Botol</option>
-                <option value="coffee">Kopi / Teh / Minuman</option>
-                <option value="mixed">Campuran Beragam</option>
+              <label class="font-label-md text-label-md text-on-surface font-semibold" for="domWeight">Perkiraan Berat Total</label>
+              <select id="domWeight" class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface outline-none focus:ring-2 focus:ring-secondary border border-outline-variant/30">
+                <option value="1">1 – 2 Kg (Camilan &amp; Bumbu)</option>
+                <option value="3">3 – 5 Kg (Paket Sedang)</option>
+                <option value="7">6 – 10 Kg (Stok Keluarga)</option>
+                <option value="15">&gt; 10 Kg (Grosir / Reseller)</option>
               </select>
             </div>
           </div>
-          <button class="mt-space-xs w-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-title-md py-space-sm rounded-lg transition-all flex items-center justify-center gap-space-2xs shadow-sm" type="submit">
+
+          <!-- Kategori Makanan -->
+          <div class="flex flex-col gap-1">
+            <label class="font-label-md text-label-md text-on-surface font-semibold" for="domProduct">Kategori Makanan</label>
+            <select id="domProduct" class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface outline-none focus:ring-2 focus:ring-secondary border border-outline-variant/30">
+              <option value="Camilan Kering &amp; Kerupuk">Camilan Kering &amp; Kerupuk Renyah</option>
+              <option value="Bumbu Masak &amp; Sambal Botol">Bumbu Masak &amp; Sambal Kemasan</option>
+              <option value="Kopi &amp; Minuman Tradisional">Kopi Nusantara &amp; Minuman Tradisional</option>
+              <option value="Campuran Aneka Produk">Campuran Aneka Produk</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-title-md py-space-sm rounded-xl transition-all flex items-center justify-center gap-space-2xs shadow-md">
             <span class="material-symbols-outlined text-[20px]">calculate</span>
-            Hitung Estimasi Waktu &amp; Ongkir
+            <span>Hitung Estimasi Domestik</span>
           </button>
         </form>
-        <!-- Result Box -->
-        <div class="hidden flex-col gap-space-xs bg-surface-container-low p-space-md rounded-lg" id="resultBox">
+
+        <!-- FORM 2: INTERNASIONAL (EKSPOR / DIASPORA) -->
+        <form id="formIntl" onsubmit="event.preventDefault(); calcIntl();" class="hidden flex-col gap-space-md">
+          <!-- Info Eksportir Resmi -->
+          <div class="bg-surface-container-low px-space-md py-space-xs rounded-xl flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm border border-outline-variant/20">
+            <span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+            <span><strong>Eksportir Resmi:</strong> CV. Bertiga Tradexa (Free Dokumen Bea Cukai &amp; Pabean)</span>
+          </div>
+
+          <!-- Negara Destinasi Utama -->
+          <div class="flex flex-col gap-1">
+            <label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="intlCountry">
+              <span>Negara Tujuan Ekspor</span>
+              <span class="text-primary font-normal text-xs">Pintu gerbang global</span>
+            </label>
+            <select id="intlCountry" class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary border border-outline-variant/30">
+              <option value="Malaysia &amp; Singapura">🇲🇾 Malaysia &amp; 🇸🇬 Singapura (Asia Tenggara)</option>
+              <option value="Taiwan &amp; Hong Kong">🇹🇼 Taiwan &amp; 🇭🇰 Hong Kong (Asia Timur)</option>
+              <option value="Australia &amp; Selandia Baru">🇦🇺 Australia &amp; 🇳🇿 Selandia Baru</option>
+              <option value="Jepang &amp; Korea Selatan">🇯🇵 Jepang &amp; 🇰🇷 Korea Selatan</option>
+              <option value="Amerika Serikat &amp; Kanada">🇺🇸 Amerika Serikat &amp; 🇨🇦 Kanada</option>
+              <option value="Eropa (Belanda, Jerman, UK, dll)">🇪🇺 Eropa (Belanda, Jerman, Inggris, dll.)</option>
+              <option value="Timur Tengah (Saudi, UAE, Qatar)">🇸🇦 Timur Tengah (Arab Saudi, UAE, Qatar)</option>
+              <option value="Negara Lainnya">🌍 Negara Lainnya di Seluruh Dunia</option>
+            </select>
+          </div>
+
+          <!-- Kota & Kode Pos Tujuan -->
+          <div class="flex flex-col gap-1">
+            <label class="font-label-md text-label-md text-on-surface font-semibold" for="intlCity">Kota &amp; Kode Pos (Postal Code) Penerima</label>
+            <input type="text" id="intlCity" placeholder="Contoh: Melbourne 3000, Tokyo 100-0001, atau Frankfurt 60311" required class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface placeholder:text-outline outline-none focus:ring-2 focus:ring-primary border border-outline-variant/30"/>
+          </div>
+
+          <!-- Berat & Kategori Pangan (Stacked on Mobile) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+            <div class="flex flex-col gap-1">
+              <label class="font-label-md text-label-md text-on-surface font-semibold" for="intlWeight">Estimasi Berat Ekspor</label>
+              <select id="intlWeight" class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary border border-outline-variant/30">
+                <option value="1">1 – 2 Kg (Camilan / Bumbu Dapur)</option>
+                <option value="3">3 – 5 Kg (Paket Rindu Rumah)</option>
+                <option value="7">6 – 10 Kg (Stok Bulanan Diaspora)</option>
+                <option value="15">&gt; 10 Kg (Pasokan Grosir Resto)</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-label-md text-label-md text-on-surface font-semibold" for="intlProduct">Kategori Pangan Ekspor</label>
+              <select id="intlProduct" class="w-full bg-surface-container-low p-space-sm rounded-xl font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary border border-outline-variant/30">
+                <option value="Makanan Kering / Vacuum">Makanan Kering &amp; Segel Kedap Udara</option>
+                <option value="Bumbu Masak &amp; Sambal Matang">Bumbu Olahan &amp; Sambal Botol Matang</option>
+                <option value="Kopi Biji &amp; Bubuk Rempah">Kopi Nusantara &amp; Rempah Alami</option>
+                <option value="Paket Campuran Diaspora">Paket Campuran Titipan Diaspora</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Standar Proteksi Ekspor Checkmarks -->
+          <div class="bg-primary/5 p-space-sm rounded-xl flex flex-col gap-1 border border-primary/20 text-on-surface font-body-sm">
+            <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider">Fasilitas Ekspor Resmi Termasuk:</span>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-space-sm gap-y-1 text-xs text-on-surface-variant mt-1">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Vacuum sealed kedap udara</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Bubble wrap tebal berlapis</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Kardus ganda kokoh (double-wall)</span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span> Dokumen invoice bea cukai resmi</span>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full bg-primary hover:bg-primary-container text-on-primary font-title-md py-space-sm rounded-xl transition-all flex items-center justify-center gap-space-2xs shadow-md">
+            <span class="material-symbols-outlined text-[20px]">flight_takeoff</span>
+            <span>Hitung Estimasi Internasional</span>
+          </button>
+        </form>
+
+        <!-- Dynamic Results Card (Smooth Reveal) -->
+        <div id="resultCard" class="hidden flex-col gap-space-sm bg-surface-container-low p-space-md sm:p-space-lg rounded-xl border border-outline-variant/30">
           <div class="flex items-center justify-between">
-            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Hasil Perkiraan Logistik</span>
-            <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary-container" id="estBadge">Aktif</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px]">verified</span>
+              <span>Hasil Estimasi Logistik</span>
+            </span>
+            <span id="resultBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container">
+              Reguler Domestik
+            </span>
           </div>
-          <div class="flex items-baseline justify-between mt-1">
-            <span class="font-body-md text-body-md text-on-surface">Estimasi Waktu Tiba:</span>
-            <span class="font-title-md text-title-md text-primary font-bold" id="estDuration">2 - 5 Hari Kerja</span>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-2xs">
+            <div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Estimasi Waktu Tiba</span>
+              <span id="resultDuration" class="font-title-lg text-title-lg text-primary font-bold mt-0.5">2 – 4 Hari Kerja</span>
+              <span id="resultSubDuration" class="font-body-sm text-xs text-on-surface-variant">Door-to-door langsung ke alamat</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-sm rounded-lg flex flex-col">
+              <span class="font-label-sm text-label-sm text-on-surface-variant">Jalur Pengiriman</span>
+              <span id="resultCourier" class="font-title-lg text-title-lg text-secondary font-bold mt-0.5">Ekspedisi Prioritas</span>
+              <span id="resultSubCourier" class="font-body-sm text-xs text-on-surface-variant">Kardus tebal &amp; kode resi instan</span>
+            </div>
           </div>
-          <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mt-1" id="estNote">
-            Ongkos kirim akurat bergantung pada alamat kode pos presisi. Klik tombol WhatsApp di bawah untuk konfirmasi tarif real-time langsung dengan data pesanan Anda.
+
+          <p id="resultNote" class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed bg-surface-container-lowest p-space-sm rounded-lg border border-outline-variant/10">
+            Perhitungan estimasi ongkos kirim presisi dan ketersediaan stok akan langsung diverifikasi oleh admin Toko Kelontong via WhatsApp.
           </p>
-          <a class="mt-2 inline-flex items-center justify-center gap-1 bg-primary text-on-primary py-2 px-3 rounded text-label-md font-semibold hover:bg-primary-container transition-all" href="https://wa.me/{{ config('toko.wa_number') }}" id="waDirectBtn" rel="noopener noreferrer" target="_blank">
-            <span class="material-symbols-outlined text-[16px]">send</span> Lanjut Konfirmasi ke WhatsApp
+
+          <!-- WhatsApp Direct Dispatch CTA -->
+          <a id="resultWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary py-space-sm px-space-md rounded-xl font-title-md text-title-md transition-all shadow-md text-center">
+            <span class="material-symbols-outlined text-[20px]">send</span>
+            <span>Konfirmasi Rincian &amp; Pesan via WhatsApp</span>
           </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 </div>
 
 <script>
-  function calculateShipping() {
-    const type = document.getElementById('destType').value;
-    const loc = document.getElementById('destLocation').value.trim();
-    const weight = document.getElementById('weightKg').value;
-    const resultBox = document.getElementById('resultBox');
-    const estDuration = document.getElementById('estDuration');
-    const estBadge = document.getElementById('estBadge');
-    const estNote = document.getElementById('estNote');
-    const waBtn = document.getElementById('waDirectBtn');
-    const waNumber = "{{ config('toko.wa_number') }}";
+  let currentTab = 'domestic';
 
-    resultBox.classList.remove('hidden');
-    resultBox.classList.add('flex');
+  function switchShippingTab(mode) {
+    currentTab = mode;
+    const tabDom = document.getElementById('tabDomestikBtn');
+    const tabIntl = document.getElementById('tabIntlBtn');
+    const formDom = document.getElementById('formDomestik');
+    const formIntl = document.getElementById('formIntl');
+    const resultCard = document.getElementById('resultCard');
 
-    if (type === 'domestic') {
-      estDuration.innerText = '2 - 4 Hari Kerja';
-      estBadge.innerText = 'Reguler Domestik';
-      estBadge.className = 'px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary-container';
-      estNote.innerText = `Pengiriman dari Klaten ke ${loc || 'tujuan Anda'}. Estimasi ongkir sangat terjangkau dengan proteksi kardus standar. Hubungi admin untuk resi instan.`;
+    if (mode === 'domestic') {
+      tabDom.className = 'flex items-center justify-center gap-2 py-space-xs px-space-sm rounded-lg font-title-md text-title-md transition-all duration-200 bg-secondary text-on-secondary shadow-sm';
+      tabIntl.className = 'flex items-center justify-center gap-2 py-space-xs px-space-sm rounded-lg font-title-md text-title-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container';
+      formDom.classList.remove('hidden');
+      formDom.classList.add('flex');
+      formIntl.classList.add('hidden');
+      formIntl.classList.remove('flex');
     } else {
-      estDuration.innerText = '3 - 7 Hari Kerja';
-      estBadge.innerText = 'Air Express Ekspor';
-      estBadge.className = 'px-2 py-0.5 rounded text-[11px] font-bold bg-primary-fixed text-on-primary-fixed-variant';
-      estNote.innerText = `Pengiriman internasional door-to-door ke ${loc || 'mancanegara'}. Termasuk proteksi vacuum sealed, bubble tebal, dan invoice bea cukai resmi.`;
+      tabIntl.className = 'flex items-center justify-center gap-2 py-space-xs px-space-sm rounded-lg font-title-md text-title-md transition-all duration-200 bg-primary text-on-primary shadow-sm';
+      tabDom.className = 'flex items-center justify-center gap-2 py-space-xs px-space-sm rounded-lg font-title-md text-title-md transition-all duration-200 text-on-surface-variant hover:text-on-surface hover:bg-surface-container';
+      formIntl.classList.remove('hidden');
+      formIntl.classList.add('flex');
+      formDom.classList.add('hidden');
+      formDom.classList.remove('flex');
     }
-
-    const message = encodeURIComponent(`Halo Toko Kelontong, saya ingin konfirmasi ongkos kirim ke: ${loc} (${type === 'domestic' ? 'Domestik' : 'Internasional'}) untuk estimasi berat sekitar ${weight} Kg.`);
-    waBtn.href = `https://wa.me/${waNumber}?text=${message}`;
+    resultCard.classList.add('hidden');
+    resultCard.classList.remove('flex');
   }
 
-  function updateCountryOptions() {
-    const type = document.getElementById('destType').value;
-    const input = document.getElementById('destLocation');
-    if (type === 'domestic') {
-      input.placeholder = 'Contoh: Surabaya, Jakarta Barat, Medan, Denpasar';
+  function calcDomestic() {
+    const regionEl = document.getElementById('domRegion');
+    const region = regionEl.options[regionEl.selectedIndex].text;
+    const city = document.getElementById('domCity').value.trim();
+    const service = document.getElementById('domService').value;
+    const weight = document.getElementById('domWeight').value;
+    const product = document.getElementById('domProduct').value;
+    const waNumber = "{{ config('toko.wa_number') }}";
+
+    const resultCard = document.getElementById('resultCard');
+    const resultBadge = document.getElementById('resultBadge');
+    const resultDuration = document.getElementById('resultDuration');
+    const resultSubDuration = document.getElementById('resultSubDuration');
+    const resultCourier = document.getElementById('resultCourier');
+    const resultSubCourier = document.getElementById('resultSubCourier');
+    const resultNote = document.getElementById('resultNote');
+    const resultWaBtn = document.getElementById('resultWaBtn');
+
+    resultCard.classList.remove('hidden');
+    resultCard.classList.add('flex');
+
+    resultBadge.innerText = service === 'cargo' ? '🇮🇩 Kargo Hemat Domestik' : '🇮🇩 Reguler Kilat Domestik';
+    resultBadge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-secondary-container text-on-secondary-container';
+
+    if (service === 'cargo') {
+      resultDuration.innerText = '3 – 6 Hari Kerja';
+      resultSubDuration.innerText = 'Kargo hemat via jalur darat/laut';
+      resultCourier.innerText = 'Kargo Nusantara';
+      resultSubCourier.innerText = 'Tarif ekonomis untuk paket besar';
     } else {
-      input.placeholder = 'Contoh: Melbourne (AUS), Tokyo (JPN), Frankfurt (GER), California (USA)';
+      resultDuration.innerText = '1 – 3 Hari Kerja';
+      resultSubDuration.innerText = 'Jalur kilat antar kota langsung';
+      resultCourier.innerText = 'JNE / J&T / SiCepat';
+      resultSubCourier.innerText = 'Kardus tebal & kode resi instan';
     }
+
+    resultNote.innerText = `Pengiriman dari Hub Klaten ke ${city || region}. Estimasi berat sekitar ${weight} Kg (${product}). Biaya ongkir akurat & ketersediaan stok siap dicekkan admin via WhatsApp.`;
+
+    const msg = `Halo Toko Kelontong, saya ingin cek ongkos kirim domestik:
+- Asal: Hub Klaten, Jawa Tengah
+- Tujuan: ${city ? city + ', ' : ''}${region}
+- Layanan: ${service === 'cargo' ? 'Kargo Hemat (Partai Besar)' : 'Reguler Kilat'}
+- Estimasi Berat: ±${weight} Kg
+- Jenis Produk: ${product}
+
+Mohon info ketersediaan produk dan total ongkos kirimnya. Terima kasih!`;
+
+    resultWaBtn.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+    resultWaBtn.className = 'w-full inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-secondary-container text-on-secondary hover:text-on-secondary-container py-space-sm px-space-md rounded-xl font-title-md text-title-md transition-all shadow-md text-center';
+  }
+
+  function calcIntl() {
+    const country = document.getElementById('intlCountry').value;
+    const city = document.getElementById('intlCity').value.trim();
+    const weight = document.getElementById('intlWeight').value;
+    const product = document.getElementById('intlProduct').value;
+    const waNumber = "{{ config('toko.wa_number') }}";
+
+    const resultCard = document.getElementById('resultCard');
+    const resultBadge = document.getElementById('resultBadge');
+    const resultDuration = document.getElementById('resultDuration');
+    const resultSubDuration = document.getElementById('resultSubDuration');
+    const resultCourier = document.getElementById('resultCourier');
+    const resultSubCourier = document.getElementById('resultSubCourier');
+    const resultNote = document.getElementById('resultNote');
+    const resultWaBtn = document.getElementById('resultWaBtn');
+
+    resultCard.classList.remove('hidden');
+    resultCard.classList.add('flex');
+
+    resultBadge.innerText = '🌏 Priority Air Express Ekspor';
+    resultBadge.className = 'px-2.5 py-0.5 rounded-full text-xs font-bold bg-primary-fixed text-on-primary-fixed-variant';
+
+    resultDuration.innerText = '3 – 7 Hari Kerja';
+    resultSubDuration.innerText = 'Jalur udara door-to-door internasional';
+    resultCourier.innerText = 'CV. Bertiga Tradexa';
+    resultSubCourier.innerText = 'Lolos pabean & packing vacuum sealed';
+
+    resultNote.innerText = `Pengiriman internasional dari Indonesia ke ${city || country}. Estimasi berat ${weight} Kg (${product}). Termasuk packing bubble wrap ganda dan dokumen deklarasi kepabeanan pangan resmi.`;
+
+    const msg = `Halo Tim Ekspor Toko Kelontong (CV. Bertiga Tradexa), saya ingin simulasi pengiriman internasional:
+- Negara Tujuan: ${country}
+- Kota / Kode Pos: ${city || '-'}
+- Kategori Makanan: ${product}
+- Estimasi Berat: ±${weight} Kg
+
+Mohon bantuan rincian ongkos kirim internasional dan panduan pemesanannya. Terima kasih!`;
+
+    resultWaBtn.href = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+    resultWaBtn.className = 'w-full inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary py-space-sm px-space-md rounded-xl font-title-md text-title-md transition-all shadow-md text-center';
   }
 </script>
 @endsection
