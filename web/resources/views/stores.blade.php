@@ -28,7 +28,7 @@
           Kunjungi Toko Kami
         </h1>
         <p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-xl">
-          Ingin belanja langsung, memilih sendiri oleh-oleh favorit, atau berkonsultasi rencana titipan ekspor? Pintu gerai fisik kami selalu terbuka hangat menyambut Anda.
+          Ingin belanja langsung, memilih sendiri oleh-oleh favorit, atau titip pesanan khusus? Pintu gerai fisik kami selalu terbuka hangat menyambut Anda.
         </p>
       </div>
       <div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md bg-surface-container px-space-md py-space-xs rounded-lg self-start md:self-auto shadow-sm">
@@ -55,7 +55,7 @@
               Toko Kelontong — Klaten (Pusat)
             </h2>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-              Pusat kurasi ritel, stok komoditas makanan kering, dan layanan pengemasan paket luar negeri.
+              Pusat kurasi ritel, stok komoditas makanan kering, dan layanan pesanan cepat area Klaten.
             </p>
             <!-- Operational Metadata List -->
             <div class="mt-space-md flex flex-col gap-space-sm">
@@ -96,7 +96,7 @@
                       <span class="material-symbols-outlined text-[15px] text-secondary">chat</span> Pak Budi
                     </a>
                     <span class="text-surface-dim">·</span>
-                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Ivan, saya ingin bertanya seputar pengiriman Toko Kelontong') }}" target="_blank" rel="noopener noreferrer">
+                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Ivan, saya ingin bertanya seputar pesanan Toko Kelontong') }}" target="_blank" rel="noopener noreferrer">
                       <span class="material-symbols-outlined text-[15px] text-secondary">chat</span> Ivan
                     </a>
                     <span class="text-surface-dim">·</span>
@@ -134,7 +134,7 @@
             </div>
           </div>
           <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
-            Lokasi strategis di Klaten, mudah diakses roda dua maupun kendaraan angkut kargo.
+            Lokasi strategis di Klaten, mudah diakses roda dua maupun roda empat.
           </p>
         </div>
         <!-- Upcoming Branch Expansion Placeholder -->
@@ -167,7 +167,7 @@
             Legalitas Resmi Perusahaan
           </h3>
           <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
-            Kepercayaan pelanggan dan mitra internasional dibangun di atas fondasi legalitas yang tertib, terdaftar secara sah pada otoritas Republik Indonesia.
+            Kepercayaan pelanggan dibangun di atas fondasi legalitas yang tertib, terdaftar secara sah pada otoritas Republik Indonesia.
           </p>
         </div>
         <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-md">
@@ -176,7 +176,7 @@
             <div>
               <span class="material-symbols-outlined text-primary text-[24px] mb-space-xs">corporate_fare</span>
               <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-bold">Badan Usaha</span>
-              <p class="font-title-md text-title-md text-on-surface font-bold mt-1">CV. Bertiga Tradexa</p>
+              <p class="font-title-md text-title-md text-on-surface font-bold mt-1">Toko Kelontong</p>
             </div>
             <span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-sm flex items-center gap-1">
               <span class="material-symbols-outlined text-[14px]">check_circle</span> Akta Notaris Sah
@@ -221,13 +221,13 @@
       <div class="lg:col-span-8 flex flex-col items-start">
         <div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm uppercase tracking-wider font-bold mb-space-sm">
           <span class="material-symbols-outlined text-[15px]">sentiment_very_satisfied</span>
-          <span>Mampir Langsung atau Kirim ke Mancanegara</span>
+          <span>Mampir Langsung atau Pesan Online</span>
         </div>
         <h3 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight leading-tight mb-space-xs">
           Rindu Kuliner Rumah? Kami Hadir Membawa Hangatnya Indonesia.
         </h3>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-          Silakan mampir ke gerai kami di Klaten untuk berbelanja langsung, atau pesan online dari belahan dunia mana pun. Tim kami siap mengemas dan mengirimkan pesanan Anda dengan aman sampai ke depan pintu.
+          Silakan mampir ke gerai kami di Klaten untuk berbelanja langsung, atau lihat katalog online dan chat via WhatsApp. Tim kami siap membantu pesanan Anda dengan hangat layaknya tetangga sendiri.
         </p>
       </div>
       <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm w-full">
@@ -237,7 +237,7 @@
         </a>
         <a class="w-full inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-on-secondary-container text-on-secondary py-space-sm px-space-lg rounded-xl font-label-lg text-label-lg transition-all shadow-sm text-center" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Toko Kelontong, saya ingin konsultasi pemesanan makanan khas Indonesia') }}" rel="noopener noreferrer" target="_blank">
           <span class="material-symbols-outlined text-[20px]">chat</span>
-          Konsultasi Ekspor via WhatsApp
+          Konsultasi via WhatsApp
         </a>
         <a class="w-full inline-flex items-center justify-center gap-space-2xs text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors py-1 text-center" href="{{ route('contact') }}">
           Lihat kontak lengkap &amp; form pesan <span class="material-symbols-outlined text-[16px]">arrow_forward</span>

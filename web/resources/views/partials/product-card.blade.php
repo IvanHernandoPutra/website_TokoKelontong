@@ -27,7 +27,6 @@
 <div class="mt-space-md pt-space-xs flex flex-col gap-space-xs">
 <div class="flex items-baseline justify-between">
 <span class="font-title-lg text-title-lg text-primary font-bold">{{ $product->formatted_price }}</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">{{ $product->usd_price }}</span>
 </div>
 <a class="w-full inline-flex items-center justify-center gap-space-2xs bg-primary hover:bg-primary-container text-on-primary py-2 px-3 rounded-lg font-label-md text-label-md transition-all shadow-sm" href="{{ $product->wa_url }}" rel="noopener" target="_blank">
 <span class="material-symbols-outlined text-[16px]">chat</span> Tanya via WhatsApp

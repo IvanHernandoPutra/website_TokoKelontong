@@ -49,8 +49,8 @@
 @error('email')<span class="text-error font-body-sm">{{ $message }}</span>@enderror
 </div>
 <div>
-<label class="font-label-md text-label-md text-on-surface block mb-space-2xs">Negara (opsional)</label>
-<input name="country" value="{{ old('country') }}" class="w-full px-4 py-3 bg-surface border border-surface-container rounded-lg text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary font-body-md" placeholder="Negara tempat tinggal"/>
+<label class="font-label-md text-label-md text-on-surface block mb-space-2xs">Kota (opsional)</label>
+<input name="country" value="{{ old('country') }}" class="w-full px-4 py-3 bg-surface border border-surface-container rounded-lg text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary font-body-md" placeholder="Kota tempat tinggal"/>
 </div>
 <div>
 <label class="font-label-md text-label-md text-on-surface block mb-space-2xs">Pesan</label>

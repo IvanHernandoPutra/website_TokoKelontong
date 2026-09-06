@@ -35,12 +35,10 @@
 <p class="font-body-lg text-body-lg text-on-surface-variant">{{ $product->description }}</p>
 <div class="flex items-baseline gap-space-sm">
 <span class="font-display text-display text-primary font-bold">{{ $product->formatted_price }}</span>
-<span class="font-body-md text-body-md text-on-surface-variant">{{ $product->usd_price }}</span>
 </div>
 <div class="flex flex-col gap-space-2xs bg-surface-container-low p-space-md rounded-xl">
 @if($product->weight_label)<span class="font-body-md text-body-md text-on-surface flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">scale</span> Berat kemasan: {{ $product->weight_label }}</span>@endif
-<span class="font-body-md text-body-md text-on-surface flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">air</span> Kemasan kedap udara standar pengiriman jarak jauh</span>
-<span class="font-body-md text-body-md text-on-surface flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">public</span> Siap kirim domestik &amp; internasional</span>
+<span class="font-body-md text-body-md text-on-surface flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">air</span> Kemasan kedap udara — produk tetap segar dan renyah</span>
 </div>
 <a class="inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-xl py-space-md rounded-xl font-label-lg text-label-lg transition-all shadow-[0_4px_16px_-4px_rgba(159,60,22,0.35)]" href="{{ $product->wa_url }}" rel="noopener" target="_blank">
 <span class="material-symbols-outlined text-[20px]">chat</span> Pesan via WhatsApp

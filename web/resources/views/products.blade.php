@@ -16,7 +16,7 @@
 <div class="max-w-2xl">
 <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold inline-block mb-1">Katalog Retail Nusantara</span>
 <h1 class="font-headline-lg text-headline-lg text-on-surface">Katalog Produk Nusantara</h1>
-<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">Koleksi snack, bumbu, kopi, dan makanan instan khas Nusantara siap kirim ke seluruh dunia.</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-2xs">Koleksi snack, bumbu, kopi, dan makanan instan khas Nusantara dengan harga eceran dan grosir.</p>
 </div>
 <div class="flex flex-wrap items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-xl shadow-sm">
 <div class="flex items-center gap-1.5 px-space-xs py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">
@@ -26,7 +26,7 @@
 <span class="material-symbols-outlined text-primary text-[16px]">air</span><span>Kedap Udara</span>
 </div>
 <div class="flex items-center gap-1.5 px-space-xs py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-tertiary text-[16px]">local_shipping</span><span>Kirim Global</span>
+<span class="material-symbols-outlined text-tertiary text-[16px]">sell</span><span>Harga Grosir</span>
 </div>
 </div>
 </div>
@@ -64,8 +64,8 @@
 <div class="bg-gradient-to-br from-secondary to-[#2c472c] text-on-secondary p-space-lg rounded-xl shadow-md flex flex-col gap-space-sm relative overflow-hidden">
 <div class="absolute -right-6 -bottom-6 w-24 h-24 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
 <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">inventory_2</span></div>
-<h4 class="font-title-lg text-title-lg text-white font-bold leading-snug">Butuh Kirim Partai Besar / Grosir?</h4>
-<p class="font-body-sm text-body-sm text-white/90 leading-relaxed">Melayani suplai restoran diaspora, toko retail Asia di mancanegara, dan pesanan dalam jumlah besar.</p>
+<h4 class="font-title-lg text-title-lg text-white font-bold leading-snug">Butuh Stok Grosir / Jumlah Besar?</h4>
+<p class="font-body-sm text-body-sm text-white/90 leading-relaxed">Melayani suplai warung, kantor, rumah makan, acara, dan pesanan dalam jumlah besar — harga khusus menanti.</p>
 <a class="mt-space-xs inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-white py-2.5 px-space-md rounded-lg font-label-lg text-label-lg transition-all shadow-sm" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ rawurlencode('Halo Toko Kelontong, saya ingin konsultasi pesanan grosir') }}" rel="noopener" target="_blank">
 <span class="material-symbols-outlined text-[18px]">chat</span> Konsultasi via WhatsApp
 </a>

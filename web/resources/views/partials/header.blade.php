@@ -4,11 +4,11 @@
 <div class="max-w-container-max mx-auto flex items-center justify-center gap-2.5 flex-wrap text-center text-[12px] sm:text-[13px] font-medium tracking-normal">
 <span class="inline-flex items-center gap-1 bg-white/15 backdrop-blur-sm px-2 py-0.5 rounded-full text-[11px] font-bold tracking-wider uppercase text-white">
 <span class="material-symbols-outlined text-[13px] text-secondary-fixed">verified</span>
-<span>Ekspor Resmi</span>
+<span>Toko Resmi Klaten</span>
 </span>
 <span class="flex items-center gap-1.5 opacity-95">
-<span class="material-symbols-outlined text-[15px] opacity-90">public</span>
-<span>Pengiriman ke Seluruh Dunia &bull; 100% Produk UMKM</span>
+<span class="material-symbols-outlined text-[15px] opacity-90">shopping_cart</span>
+<span>100% Produk UMKM &bull; Harga Eceran &amp; Grosir</span>
 </span>
 <span class="hidden sm:inline w-1 h-1 rounded-full bg-white/40"></span>
 <a class="inline-flex items-center gap-1.5 hover:text-primary-fixed transition-colors" href="https://wa.me/{{ config('toko.wa_number') }}" rel="noopener" target="_blank">
@@ -26,7 +26,6 @@
 <img alt="Logo Toko Kelontong" class="h-12 w-12 sm:h-14 sm:w-14 object-contain" src="{{ asset('images/logo.png') }}"/>
 <div class="flex flex-col">
 <span class="font-headline-sm text-[19px] sm:text-headline-sm tracking-tight text-primary leading-none whitespace-nowrap font-bold">Toko Kelontong</span>
-<span class="font-label-sm text-[10px] sm:text-[11px] text-on-surface-variant tracking-wider uppercase mt-0.5 whitespace-nowrap font-semibold">CV. Bertiga Tradexa</span>
 </div>
 </a>
 
@@ -38,7 +37,7 @@ $nav = [
     ['products', 'Produk'],
     ['about', 'Tentang Kami'],
     ['stores', 'Toko Kami'],
-    ['shipping', 'Pengiriman & Pemesanan'],
+    ['shipping', 'Cara Pemesanan'],
     ['faq', 'FAQ'],
     ['contact', 'Kontak'],
 ];

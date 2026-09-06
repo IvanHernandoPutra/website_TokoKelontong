@@ -18,12 +18,12 @@
 <div class="max-w-3xl mx-auto px-gutter-desktop flex flex-col gap-space-sm">
 @php
 $faqs = [
-    ['Apakah melayani pengiriman ke negara saya?', 'Ya, hampir ke semua negara. Konfirmasi negara tujuanmu via WhatsApp atau email untuk memastikan.'],
-    ['Berapa ongkir ke luar negeri?', 'Ongkir tergantung berat total pesanan dan negara tujuan. Kami berikan estimasi lengkap sebelum pembayaran — tanpa komitmen apa pun.'],
-    ['Bagaimana cara pembayaran dari luar negeri?', 'Transfer bank internasional atau metode pembayaran online yang akan segera tersedia. Detail diberikan saat konfirmasi pesanan.'],
-    ['Apakah produk tahan pengiriman jauh?', 'Ya. Kami hanya menjual produk tahan lama (shelf-stable) dan mengemasnya dengan kemasan kedap udara plus bubble wrap sesuai standar pengiriman internasional.'],
-    ['Berapa lama pesanan diproses?', '1–2 hari kerja setelah pembayaran terkonfirmasi. Estimasi sampai: 2–5 hari domestik, 3–7 hari internasional.'],
-    ['Apakah bisa pesan dalam jumlah besar (grosir)?', 'Bisa. Kami melayani suplai restoran diaspora dan toko retail Asia di mancanegara. Hubungi kami untuk harga khusus.'],
+    ['Bagaimana cara memesan?', 'Pilih produk favorit di katalog, klik tombol WhatsApp pada produk, lalu chat kami untuk konfirmasi stok dan harga. Tim kami akan memandu sampai pesanan selesai.'],
+    ['Apakah bisa belanja langsung di toko?', 'Bisa! Gerai kami di Klaten, Jawa Tengah buka Senin–Sabtu, 08.00–20.00 WIB. Lihat halaman Toko Kami untuk alamat lengkap.'],
+    ['Metode pembayaran apa saja yang diterima?', 'Transfer bank atau tunai langsung di toko. Detail pembayaran diberikan saat konfirmasi pesanan via WhatsApp.'],
+    ['Apakah produknya asli dan berkualitas?', 'Ya. Semua produk dikurasi langsung dari produsen dan UMKM lokal terpercaya, dikemas kedap udara agar tetap segar sampai tangan Anda.'],
+    ['Apakah bisa pesan dalam jumlah besar (grosir)?', 'Bisa. Kami melayani kebutuhan warung, rumah makan, kantor, hingga acara — hubungi kami untuk harga khusus grosir.'],
+    ['Berapa lama pesanan diproses?', 'Pesanan diproses 1–2 hari kerja setelah konfirmasi. Detail selanjutnya diatur langsung saat chat dengan tim kami.'],
     ['Apakah ada toko fisik?', 'Ada, di Klaten, Jawa Tengah. Lihat halaman Toko Kami untuk alamat dan jam operasional.'],
 ];
 @endphp

@@ -25,16 +25,16 @@
         <span>Akar Nilai &amp; Perjalanan</span>
       </div>
       <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight mb-space-md">
-        Dari Sudut Klaten untuk Rindu Nusantara di Seluruh Belahan Dunia.
+        Dari Sudut Klaten untuk Kebutuhan Harian Nusantara.
       </h1>
       <p class="font-body-lg text-body-lg text-primary font-semibold mb-space-sm leading-relaxed">
         Toko Kelontong adalah unit usaha ritel makanan khas Indonesia di bawah naungan resmi CV. Bertiga Tradexa.
       </p>
       <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
-        Perjalanan kami berakar sederhana dari sebuah toko kelontong di Klaten, Jawa Tengah — setia memenuhi kebutuhan harian bahan pangan tetangga dan masyarakat sekitar. Melalui interaksi hangat dari meja kasir kayu, kami menyaksikan kerinduan mendalam dari sanak famili dan diaspora Indonesia di luar negeri yang merindukan cita rasa tanah air: aroma seduhan kopi khas lereng gunung, renyahnya basreng kampung halaman, dan racikan rempah bumbu dapur otentik.
+        Perjalanan kami berakar sederhana dari sebuah toko kelontong di Klaten, Jawa Tengah — setia memenuhi kebutuhan harian bahan pangan tetangga dan masyarakat sekitar. Melalui interaksi hangat dari meja kasir kayu, kami belajar memahamu selera pelanggan: aroma seduhan kopi khas lereng gunung, renyahnya basreng kampung halaman, dan racikan rempah bumbu dapur otentik.
       </p>
       <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
-        Menjawab rindu tersebut, kami mentransformasi kelontong tradisional menjadi pusat distribusi makanan Indonesia berkualitas ekspor. Kini kami melayani diaspora Indonesia, perantau, mahasiswa luar negeri, hingga penggemar kuliner Nusantara global dengan standar ketat dan pengepakan berkelas dunia.
+        Menjawab kebutuhan tersebut, kami mentransformasi kelontong tradisional menjadi toko belanja makanan khas Indonesia yang modern. Kini pelanggan cukup lihat katalog online, chat via WhatsApp, dan pesanan siap diambil — praktis tanpa kehilangan kehangatan pelayanan toko tetangga.
       </p>
       <!-- Mission Quote Banner -->
       <div class="w-full bg-surface-container-low rounded-xl p-space-lg flex items-start gap-space-md shadow-sm relative overflow-hidden">
@@ -45,12 +45,12 @@
             “Misi kami sederhana: membuat rasa rumah bisa dinikmati di mana pun.”
           </p>
           <span class="font-label-md text-label-md text-on-surface-variant mt-space-2xs">
-            — Komitmen CV. Bertiga Tradexa kepada setiap perantau Indonesia
+            — Komitmen CV. Bertiga Tradexa kepada setiap pelanggan
           </span>
         </div>
       </div>
     </div>
-    <!-- Right Visual Grid (Authentic Store & Export Grade Packing) -->
+    <!-- Right Visual Grid (Authentic Store & Product Display) -->
     <div class="lg:col-span-5 flex flex-col gap-space-md">
       <!-- Main Shop Visual -->
       <div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
@@ -62,14 +62,14 @@
       </div>
       <!-- Packing & Shipping Showcase Card -->
       <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
-        <img alt="Standardisasi Pengepakan Ekspor Toko Kelontong" class="w-24 h-24 rounded-lg object-cover shrink-0" src="{{ asset('images/stitch_packaging_box.jpg') }}"/>
+        <img alt="Standardisasi Pengepakan Toko Kelontong" class="w-24 h-24 rounded-lg object-cover shrink-0" src="{{ asset('images/stitch_packaging_box.jpg') }}"/>
         <div class="flex flex-col">
           <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider flex items-center gap-1">
-            <span class="material-symbols-outlined text-[14px]">package_2</span> Standar Ekspor Aman
+            <span class="material-symbols-outlined text-[14px]">package_2</span> Kemasan Aman &amp; Higienis
           </span>
           <h4 class="font-title-md text-title-md text-on-surface font-semibold mt-0.5">Pengepakan Kedap Udara</h4>
           <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug mt-1">
-            Setiap produk dikurasi higienis dan disegel kedap udara dengan bantalan tebal untuk pengiriman antar benua.
+            Setiap produk dikurasi higienis dan disegel kedap udara agar tetap segar dan renyah sampai tangan Anda.
           </p>
         </div>
       </div>
@@ -77,7 +77,7 @@
   </div>
 </section>
 
-<!-- Section 2: Legalitas Resmi (Kredibilitas Bisnis & Ekspor) -->
+<!-- Section 2: Legalitas Resmi (Kredibilitas Bisnis) -->
 <section class="w-full bg-surface-container-low py-space-2xl">
   <div class="max-w-container-max mx-auto px-gutter-desktop">
     <div class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md">
@@ -90,7 +90,7 @@
             Legalitas Resmi Perusahaan
           </h3>
           <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
-            Kepercayaan pelanggan dan mitra internasional dibangun di atas fondasi legalitas yang tertib, terdaftar secara sah pada otoritas Republik Indonesia.
+            Kepercayaan pelanggan dibangun di atas fondasi legalitas yang tertib, terdaftar secara sah pada otoritas Republik Indonesia.
           </p>
         </div>
         <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-md">
@@ -165,7 +165,7 @@
         Kualitas Produk Terbaik
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-        Kurasi ketat komoditas pilihan, bumbu olahan matang, dan camilan lokal yang memenuhi standar higienitas ekspor dan ketahanan simpan internasional.
+        Kurasi ketat komoditas pilihan, bumbu olahan matang, dan camilan lokal yang memenuhi standar higienitas dan ketahanan simpan terbaik.
       </p>
       <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-secondary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
         <span class="material-symbols-outlined text-[18px]">verified</span> 100% Asli Nusantara
@@ -186,7 +186,7 @@
         Harga Wajar &amp; Transparan
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-        Standar harga grosir &amp; eceran wajar tanpa biaya tersembunyi. Simulasi ongkos kirim dihitung transparan berdasarkan berat bersih dan regulasi pabean tujuan.
+        Standar harga grosir &amp; eceran wajar tanpa biaya tersembunyi. Semua harga tercantum jelas di katalog — apa adanya, tanpa kejutan.
       </p>
       <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
         <span class="material-symbols-outlined text-[18px]">payments</span> Jujur &amp; Kompetitif
@@ -207,7 +207,7 @@
         Pelayanan Ramah &amp; Personal
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-        Semangat toko kelontong di mana setiap pembeli dikenal layaknya tetangga sendiri. Layanan pelanggan kami sigap membantu konsultasi produk, pemilihan ekspedisi tercepat, hingga penyesuaian pesanan khusus.
+        Semangat toko kelontong di mana setiap pembeli dikenal layaknya tetangga sendiri. Layanan pelanggan kami sigap membantu konsultasi produk, rekomendasi pilihan terbaik, hingga penyesuaian pesanan khusus.
       </p>
       <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
         <span class="material-symbols-outlined text-[18px]">chat</span> Respons Cepat via WhatsApp
@@ -228,7 +228,7 @@
           Kunjungi Toko Kami
         </h3>
         <p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-xl">
-          Ingin belanja langsung, memilih sendiri oleh-oleh favorit, atau berkonsultasi rencana titipan ekspor? Pintu gerai fisik kami selalu terbuka hangat menyambut Anda.
+          Ingin belanja langsung, memilih sendiri oleh-oleh favorit, atau titip pesanan khusus? Pintu gerai fisik kami selalu terbuka hangat menyambut Anda.
         </p>
       </div>
       <div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md bg-surface-container-high px-space-md py-space-xs rounded-lg self-start md:self-auto">
@@ -254,7 +254,7 @@
               Toko Kelontong — Klaten (Pusat)
             </h4>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-              Pusat kurasi ritel, stok komoditas makanan kering, dan layanan pengemasan paket luar negeri.
+              Pusat kurasi ritel, stok komoditas makanan kering, dan layanan pesanan cepat area Klaten.
             </p>
             <!-- Operational Metadata List -->
             <div class="mt-space-md flex flex-col gap-space-sm">
@@ -295,7 +295,7 @@
                       <span class="material-symbols-outlined text-[15px] text-secondary">chat</span> Pak Budi
                     </a>
                     <span class="text-surface-dim">·</span>
-                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Ivan, saya ingin bertanya seputar pengiriman Toko Kelontong') }}" target="_blank" rel="noopener noreferrer">
+                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Ivan, saya ingin bertanya seputar pesanan Toko Kelontong') }}" target="_blank" rel="noopener noreferrer">
                       <span class="material-symbols-outlined text-[15px] text-secondary">chat</span> Ivan
                     </a>
                     <span class="text-surface-dim">·</span>
@@ -333,7 +333,7 @@
             </div>
           </div>
           <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
-            Lokasi strategis di Klaten, mudah diakses roda dua maupun kendaraan angkut kargo.
+            Lokasi strategis di Klaten, mudah diakses roda dua maupun roda empat.
           </p>
         </div>
         <!-- Upcoming Branch Expansion Placeholder -->
@@ -344,7 +344,7 @@
           <div>
             <span class="font-title-md text-title-md text-on-surface font-semibold block">Ekspansi Cabang Baru</span>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
-              Kami terus bersiap memperluas hub fisik ke kota-kota strategis di Jawa &amp; Bali untuk mempermudah distribusi lokal Anda.
+              Kami terus bersiap memperluas gerai ke kota-kota strategis di Jawa &amp; Bali agar makin dekat dengan Anda.
             </p>
           </div>
         </div>
@@ -364,13 +364,13 @@
       <div class="lg:col-span-8 flex flex-col items-start">
         <div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm uppercase tracking-wider font-bold mb-space-sm">
           <span class="material-symbols-outlined text-[15px]">sentiment_very_satisfied</span>
-          <span>Mampir Langsung atau Kirim ke Mancanegara</span>
+          <span>Mampir Langsung atau Pesan Online</span>
         </div>
         <h3 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight leading-tight mb-space-xs">
           Rindu Kuliner Rumah? Kami Hadir Membawa Hangatnya Indonesia.
         </h3>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-          Silakan mampir ke gerai kami di Klaten untuk berbelanja langsung, atau pesan online dari belahan dunia mana pun. Tim kami siap mengemas dan mengirimkan pesanan Anda dengan aman sampai ke depan pintu.
+          Silakan mampir ke gerai kami di Klaten untuk berbelanja langsung, atau lihat katalog online dan chat via WhatsApp. Tim kami siap membantu pesanan Anda dengan hangat layaknya tetangga sendiri.
         </p>
       </div>
       <!-- CTA Action Buttons -->
@@ -381,7 +381,7 @@
         </a>
         <a class="w-full inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-on-secondary-container text-on-secondary py-space-sm px-space-lg rounded-xl font-label-lg text-label-lg transition-all shadow-sm text-center" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Toko Kelontong, saya ingin konsultasi pemesanan makanan khas Indonesia') }}" rel="noopener noreferrer" target="_blank">
           <span class="material-symbols-outlined text-[20px]">chat</span>
-          Konsultasi Ekspor via WhatsApp
+          Konsultasi via WhatsApp
         </a>
         <a class="w-full inline-flex items-center justify-center gap-space-2xs text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors py-1 text-center" href="{{ route('contact') }}">
           Lihat kontak lengkap &amp; form pesan <span class="material-symbols-outlined text-[16px]">arrow_forward</span>

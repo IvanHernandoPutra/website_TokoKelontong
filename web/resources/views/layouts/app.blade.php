@@ -5,8 +5,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta name="color-scheme" content="light only"/>
 <meta name="supported-color-schemes" content="light"/>
-<title>@yield('title', 'Toko Kelontong — Rasa Asli Indonesia, Dikirim ke Seluruh Dunia')</title>
-<meta name="description" content="@yield('meta_description', 'Oleh-oleh khas Nusantara pilihan — snack, bumbu rempah, kopi, dan makanan kering terbaik dari produsen lokal. Pengiriman internasional oleh CV. Bertiga Tradexa.')"/>
+<title>@yield('title', 'Toko Kelontong — Belanja Makanan & Kebutuhan Harian Khas Nusantara')</title>
+<meta name="description" content="@yield('meta_description', 'Katalog snack, bumbu rempah, kopi, dan makanan instan khas Nusantara dari produsen lokal. Harga eceran dan grosir — Toko Kelontong Klaten.')"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>

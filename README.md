@@ -1,6 +1,6 @@
 # Toko Kelontong — Website E-Commerce & Retail Makanan Nusantara
 
-Website katalog ritel makanan khas Indonesia untuk pasar domestik dan ekspor diaspora, dinaungi oleh **CV. Bertiga Tradexa**.
+Website katalog ritel makanan khas Indonesia untuk pasar domestik, dikelola oleh **Toko Kelontong**.
 
 ## Tech Stack
 - **Framework:** Laravel 13.x (PHP 8.2+)
