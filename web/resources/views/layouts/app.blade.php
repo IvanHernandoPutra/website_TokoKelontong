@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" class="light" style="color-scheme: light only;">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light" style="color-scheme: light only;">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>

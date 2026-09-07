@@ -13,3 +13,11 @@ Route::get('/pengiriman-dan-pemesanan', [PageController::class, 'shipping'])->na
 Route::get('/faq', [PageController::class, 'faq'])->name('faq');
 Route::get('/kontak', [PageController::class, 'contact'])->name('contact');
 Route::post('/kontak', [ContactController::class, 'store'])->name('contact.store');
+
+Route::get('/bahasa/{locale}', function (string $locale) {
+    if (in_array($locale, ['id', 'en'], true)) {
+        session(['locale' => $locale]);
+    }
+
+    return redirect()->back();
+})->name('locale.switch');

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Tentang Kami — Toko Kelontong')
+@section('title', __('about.title'))
 
 @section('content')
 <div class="flex flex-col w-full">
@@ -8,10 +8,10 @@
 <section class="max-w-container-max mx-auto px-gutter-desktop w-full pt-space-md pb-space-xs">
   <div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
     <a class="hover:text-primary transition-colors flex items-center gap-1" href="{{ route('home') }}">
-      <span class="material-symbols-outlined text-[16px]">home</span> Beranda
+      <span class="material-symbols-outlined text-[16px]">home</span> {{ __('common.home') }}
     </a>
     <span>/</span>
-    <span class="text-primary font-semibold">Tentang Kami</span>
+    <span class="text-primary font-semibold">{{ __('about.breadcrumb') }}</span>
   </div>
 </section>
 
@@ -22,19 +22,19 @@
     <div class="lg:col-span-7 flex flex-col items-start">
       <div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs bg-secondary-container text-on-secondary-container rounded-full font-label-sm uppercase tracking-wider font-bold mb-space-sm">
         <span class="material-symbols-outlined text-[16px]">storefront</span>
-        <span>Akar Nilai &amp; Perjalanan</span>
+        <span>{!! __('about.badge_story') !!}</span>
       </div>
       <h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-tight mb-space-md">
-        Dari Sudut Klaten untuk Kebutuhan Harian Nusantara.
+        {{ __('about.h1') }}
       </h1>
       <p class="font-body-lg text-body-lg text-primary font-semibold mb-space-sm leading-relaxed">
-        Toko Kelontong adalah unit usaha ritel makanan khas Indonesia di bawah naungan resmi CV. Bertiga Tradexa.
+        {{ __('about.intro') }}
       </p>
       <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
-        Perjalanan kami berakar sederhana dari sebuah toko kelontong di Klaten, Jawa Tengah — setia memenuhi kebutuhan harian bahan pangan tetangga dan masyarakat sekitar. Melalui interaksi hangat dari meja kasir kayu, kami belajar memahamu selera pelanggan: aroma seduhan kopi khas lereng gunung, renyahnya basreng kampung halaman, dan racikan rempah bumbu dapur otentik.
+        {{ __('about.p1') }}
       </p>
       <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
-        Menjawab kebutuhan tersebut, kami mentransformasi kelontong tradisional menjadi toko belanja makanan khas Indonesia yang modern. Kini pelanggan cukup lihat katalog online, chat via WhatsApp, dan pesanan siap diambil — praktis tanpa kehilangan kehangatan pelayanan toko tetangga.
+        {{ __('about.p2') }}
       </p>
       <!-- Mission Quote Banner -->
       <div class="w-full bg-surface-container-low rounded-xl p-space-lg flex items-start gap-space-md shadow-sm relative overflow-hidden">
@@ -42,10 +42,10 @@
         <span class="material-symbols-outlined text-primary text-[36px] shrink-0 opacity-80">format_quote</span>
         <div class="flex flex-col">
           <p class="font-title-lg text-title-lg text-on-surface font-bold italic tracking-tight">
-            “Misi kami sederhana: membuat rasa rumah bisa dinikmati di mana pun.”
+            {{ __('about.quote') }}
           </p>
           <span class="font-label-md text-label-md text-on-surface-variant mt-space-2xs">
-            — Komitmen CV. Bertiga Tradexa kepada setiap pelanggan
+            {{ __('about.quote_attribution') }}
           </span>
         </div>
       </div>
@@ -56,8 +56,8 @@
       <div class="relative rounded-xl overflow-hidden bg-surface-container shadow-md group">
         <img alt="Suasana Toko Kelontong Tradisional di Klaten" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500" src="{{ asset('images/stitch_toko_klaten.jpg') }}"/>
         <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-on-surface/90 via-on-surface/40 to-transparent p-space-md text-surface">
-          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-bold">Akar Tradisi</span>
-          <p class="font-title-md text-title-md font-semibold text-surface">Toko Ritel Fisik Klaten, Jawa Tengah</p>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed font-bold">{{ __('about.img_tradition_badge') }}</span>
+          <p class="font-title-md text-title-md font-semibold text-surface">{{ __('about.img_tradition_text') }}</p>
         </div>
       </div>
       <!-- Packing & Shipping Showcase Card -->
@@ -65,11 +65,11 @@
         <img alt="Standardisasi Pengepakan Toko Kelontong" class="w-24 h-24 rounded-lg object-cover shrink-0" src="{{ asset('images/stitch_packaging_box.jpg') }}"/>
         <div class="flex flex-col">
           <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider flex items-center gap-1">
-            <span class="material-symbols-outlined text-[14px]">package_2</span> Kemasan Aman &amp; Higienis
+            <span class="material-symbols-outlined text-[14px]">package_2</span> {!! __('about.pack_badge') !!}
           </span>
-          <h4 class="font-title-md text-title-md text-on-surface font-semibold mt-0.5">Pengepakan Kedap Udara</h4>
+          <h4 class="font-title-md text-title-md text-on-surface font-semibold mt-0.5">{{ __('about.pack_title') }}</h4>
           <p class="font-body-sm text-body-sm text-on-surface-variant leading-snug mt-1">
-            Setiap produk dikurasi higienis dan disegel kedap udara agar tetap segar dan renyah sampai tangan Anda.
+            {{ __('about.pack_desc') }}
           </p>
         </div>
       </div>
@@ -84,13 +84,13 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
         <div class="lg:col-span-5 flex flex-col items-start">
           <div class="inline-flex items-center gap-1 text-secondary font-label-sm uppercase tracking-wider font-bold mb-space-2xs">
-            <span class="material-symbols-outlined text-[18px]">verified_user</span> Transparansi &amp; Kepatuhan Hukum
+            <span class="material-symbols-outlined text-[18px]">verified_user</span> {!! __('about.legal_eyebrow') !!}
           </div>
           <h3 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
-            Legalitas Resmi Perusahaan
+            {{ __('about.legal_title') }}
           </h3>
           <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
-            Kepercayaan pelanggan dibangun di atas fondasi legalitas yang tertib, terdaftar secara sah pada otoritas Republik Indonesia.
+            {{ __('about.legal_desc') }}
           </p>
         </div>
         <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-space-md">
@@ -98,35 +98,35 @@
           <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between">
             <div>
               <span class="material-symbols-outlined text-primary text-[24px] mb-space-xs">corporate_fare</span>
-              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-bold">Badan Usaha</span>
-              <p class="font-title-md text-title-md text-on-surface font-bold mt-1">CV. Bertiga Tradexa</p>
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-bold">{{ __('about.legal_entity_label') }}</span>
+              <p class="font-title-md text-title-md text-on-surface font-bold mt-1">{{ __('about.legal_entity_value') }}</p>
             </div>
             <span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-sm flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px]">check_circle</span> Akta Notaris Sah
+              <span class="material-symbols-outlined text-[14px]">check_circle</span> {{ __('about.legal_entity_status') }}
             </span>
           </div>
           <!-- NPWP Terdaftar -->
           <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between">
             <div>
               <span class="material-symbols-outlined text-primary text-[24px] mb-space-xs">badge</span>
-              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-bold">Nomor Pokok Wajib Pajak</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-bold">{{ __('about.legal_npwp_label') }}</span>
               <p class="font-title-md text-title-md text-on-surface font-bold mt-1 tracking-tight">41.890.342.1-525.000</p>
             </div>
             <span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-sm flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px]">check_circle</span> NPWP Aktif &amp; Valid
+              <span class="material-symbols-outlined text-[14px]">check_circle</span> {!! __('about.legal_npwp_status') !!}
             </span>
           </div>
           <!-- Domisili Resmi -->
           <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col justify-between">
             <div>
               <span class="material-symbols-outlined text-primary text-[24px] mb-space-xs">location_city</span>
-              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-bold">Alamat Terdaftar</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block font-bold">{{ __('about.legal_address_label') }}</span>
               <p class="font-body-sm text-body-sm text-on-surface font-medium mt-1 leading-snug">
-                Pusat Distribusi Klaten, Jawa Tengah, Indonesia 57411
+                {{ __('about.legal_address_value') }}
               </p>
             </div>
             <span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-sm flex items-center gap-1">
-              <span class="material-symbols-outlined text-[14px]">check_circle</span> Terverifikasi Sesuai NPWP
+              <span class="material-symbols-outlined text-[14px]">check_circle</span> {{ __('about.legal_address_status') }}
             </span>
           </div>
         </div>
@@ -140,13 +140,13 @@
   <div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-space-2xl">
     <div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs bg-surface-container rounded-full text-secondary font-label-sm uppercase tracking-wider mb-space-xs">
       <span class="material-symbols-outlined text-[16px]">stars</span>
-      <span>Prinsip Layanan Kami</span>
+      <span>{{ __('about.values_eyebrow') }}</span>
     </div>
     <h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold">
-      Tiga Nilai yang Menjaga Keaslian Rasa
+      {{ __('about.values_title') }}
     </h3>
     <p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
-      Membawa kehangatan pelayanan toko kelontong tradisional ke dalam ekosistem perdagangan modern berdaya saing tinggi.
+      {{ __('about.values_desc') }}
     </p>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
@@ -160,15 +160,15 @@
       <div class="w-14 h-14 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:rotate-6 group-hover:bg-secondary group-hover:text-on-secondary group-hover:shadow-md transition-all duration-300">
         <span class="material-symbols-outlined text-[32px]">workspace_premium</span>
       </div>
-      <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1">Pilar 01</span>
+      <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1">{{ __('about.pillar1_no') }}</span>
       <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary font-semibold mb-space-xs transition-colors duration-200">
-        Kualitas Produk Terbaik
+        {{ __('about.pillar1_title') }}
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-        Kurasi ketat komoditas pilihan, bumbu olahan matang, dan camilan lokal yang memenuhi standar higienitas dan ketahanan simpan terbaik.
+        {{ __('about.pillar1_desc') }}
       </p>
       <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-secondary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
-        <span class="material-symbols-outlined text-[18px]">verified</span> 100% Asli Nusantara
+        <span class="material-symbols-outlined text-[18px]">verified</span> {{ __('about.pillar1_foot') }}
       </div>
     </div>
     <!-- Nilai 2: Harga Wajar & Transparan -->
@@ -181,15 +181,15 @@
       <div class="w-14 h-14 rounded-2xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:-rotate-6 group-hover:bg-tertiary group-hover:text-on-tertiary group-hover:shadow-md transition-all duration-300">
         <span class="material-symbols-outlined text-[32px]">handshake</span>
       </div>
-      <span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider mb-1">Pilar 02</span>
+      <span class="font-label-sm text-label-sm text-tertiary font-bold uppercase tracking-wider mb-1">{{ __('about.pillar2_no') }}</span>
       <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary font-semibold mb-space-xs transition-colors duration-200">
-        Harga Wajar &amp; Transparan
+        {!! __('about.pillar2_title') !!}
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-        Standar harga grosir &amp; eceran wajar tanpa biaya tersembunyi. Semua harga tercantum jelas di katalog — apa adanya, tanpa kejutan.
+        {!! __('about.pillar2_desc') !!}
       </p>
       <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-tertiary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
-        <span class="material-symbols-outlined text-[18px]">payments</span> Jujur &amp; Kompetitif
+        <span class="material-symbols-outlined text-[18px]">payments</span> {!! __('about.pillar2_foot') !!}
       </div>
     </div>
     <!-- Nilai 3: Pelayanan Ramah & Personal -->
@@ -202,15 +202,15 @@
       <div class="w-14 h-14 rounded-2xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center mb-space-md group-hover:scale-110 group-hover:rotate-6 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md transition-all duration-300">
         <span class="material-symbols-outlined text-[32px]">sentiment_satisfied</span>
       </div>
-      <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider mb-1">Pilar 03</span>
+      <span class="font-label-sm text-label-sm text-primary font-bold uppercase tracking-wider mb-1">{{ __('about.pillar3_no') }}</span>
       <h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary font-semibold mb-space-xs transition-colors duration-200">
-        Pelayanan Ramah &amp; Personal
+        {{ __('about.pillar3_title') }}
       </h4>
       <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-        Semangat toko kelontong di mana setiap pembeli dikenal layaknya tetangga sendiri. Layanan pelanggan kami sigap membantu konsultasi produk, rekomendasi pilihan terbaik, hingga penyesuaian pesanan khusus.
+        {{ __('about.pillar3_desc') }}
       </p>
       <div class="mt-space-md pt-space-sm w-full flex items-center gap-space-xs text-primary font-label-md text-label-md font-semibold group-hover:translate-x-1.5 transition-transform duration-200">
-        <span class="material-symbols-outlined text-[18px]">chat</span> Respons Cepat via WhatsApp
+        <span class="material-symbols-outlined text-[18px]">chat</span> {{ __('about.pillar3_foot') }}
       </div>
     </div>
   </div>
@@ -222,18 +222,18 @@
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
       <div>
         <div class="inline-flex items-center gap-1 text-secondary font-label-sm uppercase tracking-wider font-bold mb-space-2xs">
-          <span class="material-symbols-outlined text-[16px]">pin_drop</span> Titik Temu Fisik
+          <span class="material-symbols-outlined text-[16px]">pin_drop</span> {{ __('stores.eyebrow') }}
         </div>
         <h3 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
-          Kunjungi Toko Kami
+          {{ __('stores.h1') }}
         </h3>
         <p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-xl">
-          Ingin belanja langsung, memilih sendiri oleh-oleh favorit, atau titip pesanan khusus? Pintu gerai fisik kami selalu terbuka hangat menyambut Anda.
+          {{ __('stores.desc') }}
         </p>
       </div>
       <div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md bg-surface-container-high px-space-md py-space-xs rounded-lg self-start md:self-auto">
         <span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
-        <span>Outlet Pusat Beroperasi Normal</span>
+        <span>{{ __('stores.status') }}</span>
       </div>
     </div>
     <!-- Outlet Modular Cards Grid -->
@@ -244,17 +244,17 @@
         <div class="md:w-5/12 relative bg-surface-container shrink-0 min-h-[260px] md:min-h-full">
           <img alt="Toko Kelontong Pusat Klaten" class="w-full h-full object-cover absolute inset-0" src="{{ asset('images/stitch_outlet_fisik.jpg') }}"/>
           <div class="absolute top-space-sm left-space-sm bg-primary text-on-primary px-space-sm py-space-2xs rounded-lg font-label-sm uppercase tracking-wider font-bold shadow-sm">
-            Gerai Pusat &amp; Gudang
+            {!! __('stores.main_badge') !!}
           </div>
         </div>
         <!-- Outlet Details Body -->
         <div class="p-space-lg md:p-space-xl md:w-7/12 flex flex-col justify-between">
           <div>
             <h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">
-              Toko Kelontong — Klaten (Pusat)
+              {{ __('stores.main_title') }}
             </h4>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-              Pusat kurasi ritel, stok komoditas makanan kering, dan layanan pesanan cepat area Klaten.
+              {{ __('stores.main_desc') }}
             </p>
             <!-- Operational Metadata List -->
             <div class="mt-space-md flex flex-col gap-space-sm">
@@ -264,9 +264,9 @@
                   <span class="material-symbols-outlined text-[20px]">location_on</span>
                 </div>
                 <div>
-                  <span class="font-label-sm text-label-sm text-on-surface-variant block font-bold uppercase tracking-wider">Lokasi Outlet</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant block font-bold uppercase tracking-wider">{{ __('stores.location_label') }}</span>
                   <span class="font-body-md text-body-md text-on-surface font-medium leading-snug">
-                    Griya Trucuk Indah No. 53, Jambon, Sabrang Lor, Trucuk, Klaten, Jawa Tengah 57467
+                    {{ __('stores.location_value') }}
                   </span>
                 </div>
               </div>
@@ -276,11 +276,11 @@
                   <span class="material-symbols-outlined text-[20px]">schedule</span>
                 </div>
                 <div>
-                  <span class="font-label-sm text-label-sm text-on-surface-variant block font-bold uppercase tracking-wider">Jam Operasional</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant block font-bold uppercase tracking-wider">{{ __('stores.hours_label') }}</span>
                   <span class="font-body-md text-body-md text-on-surface font-medium">
-                    Senin – Sabtu: 08.00 – 20.00 WIB
+                    {{ __('stores.hours_value') }}
                   </span>
-                  <span class="font-body-sm text-body-sm text-on-surface-variant block">(Minggu &amp; Libur Nasional: Konfirmasi Tim via WA)</span>
+                  <span class="font-body-sm text-body-sm text-on-surface-variant block">{!! __('stores.hours_note') !!}</span>
                 </div>
               </div>
               <!-- Store Contact Person -->
@@ -289,17 +289,17 @@
                   <span class="material-symbols-outlined text-[20px]">contact_phone</span>
                 </div>
                 <div>
-                  <span class="font-label-sm text-label-sm text-on-surface-variant block font-bold uppercase tracking-wider">Layanan Pelanggan &amp; Store Direct</span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant block font-bold uppercase tracking-wider">{{ __('stores.contact_label') }}</span>
                   <div class="flex flex-wrap gap-x-space-md gap-y-space-2xs mt-1 font-body-sm text-body-sm text-on-surface">
-                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Pak Budi, saya ingin bertanya seputar produk Toko Kelontong') }}" target="_blank" rel="noopener noreferrer">
+                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode(__('stores.wa_budi')) }}" target="_blank" rel="noopener noreferrer">
                       <span class="material-symbols-outlined text-[15px] text-secondary">chat</span> Pak Budi
                     </a>
                     <span class="text-surface-dim">·</span>
-                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Ivan, saya ingin bertanya seputar pesanan Toko Kelontong') }}" target="_blank" rel="noopener noreferrer">
+                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode(__('stores.wa_ivan')) }}" target="_blank" rel="noopener noreferrer">
                       <span class="material-symbols-outlined text-[15px] text-secondary">chat</span> Ivan
                     </a>
                     <span class="text-surface-dim">·</span>
-                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Bu Tesa, saya ingin bertanya seputar pesanan Toko Kelontong') }}" target="_blank" rel="noopener noreferrer">
+                    <a class="hover:text-primary transition-colors flex items-center gap-1 font-semibold" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode(__('stores.wa_tesa')) }}" target="_blank" rel="noopener noreferrer">
                       <span class="material-symbols-outlined text-[15px] text-secondary">chat</span> Bu Tesa
                     </a>
                   </div>
@@ -311,11 +311,11 @@
           <div class="mt-space-lg pt-space-md flex flex-col sm:flex-row gap-space-sm items-center">
             <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg font-label-lg text-label-lg transition-colors shadow-sm" href="https://maps.google.com/?q=Trucuk+Klaten+Jawa+Tengah" rel="noopener noreferrer" target="_blank">
               <span class="material-symbols-outlined text-[18px]">map</span>
-              Buka di Google Maps
+              {{ __('stores.maps_btn') }}
             </a>
-            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-lg font-label-lg text-label-lg transition-colors" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Toko Kelontong, saya ingin berkunjung ke outlet Klaten') }}" rel="noopener noreferrer" target="_blank">
+            <a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface px-space-md py-space-sm rounded-lg font-label-lg text-label-lg transition-colors" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode(__('stores.wa_visit')) }}" rel="noopener noreferrer" target="_blank">
               <span class="material-symbols-outlined text-[18px] text-secondary">support_agent</span>
-              Tanya Stok Outlet
+              {{ __('stores.stock_btn') }}
             </a>
           </div>
         </div>
@@ -325,15 +325,15 @@
         <!-- Google Maps Static View Target -->
         <div class="bg-surface-container-lowest p-space-md rounded-xl shadow-md flex flex-col">
           <span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider mb-2 flex items-center gap-1">
-            <span class="material-symbols-outlined text-[16px]">explore</span> Navigasi Rute
+            <span class="material-symbols-outlined text-[16px]">explore</span> {{ __('stores.nav_title') }}
           </span>
           <div class="w-full h-44 rounded-lg bg-cover bg-center shadow-inner relative flex items-center justify-center overflow-hidden" style="background-image: url('{{ asset('images/stitch_map_klaten.jpg') }}')">
             <div class="bg-surface/90 backdrop-blur-sm px-space-sm py-space-2xs rounded-full shadow flex items-center gap-1 text-on-surface font-label-sm text-label-sm">
-              <span class="material-symbols-outlined text-primary text-[16px]">location_on</span> Area Klaten Kota
+              <span class="material-symbols-outlined text-primary text-[16px]">location_on</span> {{ __('stores.map_label') }}
             </div>
           </div>
           <p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
-            Lokasi strategis di Klaten, mudah diakses roda dua maupun roda empat.
+            {{ __('stores.map_desc') }}
           </p>
         </div>
         <!-- Upcoming Branch Expansion Placeholder -->
@@ -342,9 +342,9 @@
             <span class="material-symbols-outlined text-[22px]">add_business</span>
           </div>
           <div>
-            <span class="font-title-md text-title-md text-on-surface font-semibold block">Ekspansi Cabang Baru</span>
+            <span class="font-title-md text-title-md text-on-surface font-semibold block">{{ __('stores.expansion_title') }}</span>
             <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
-              Kami terus bersiap memperluas gerai ke kota-kota strategis di Jawa &amp; Bali agar makin dekat dengan Anda.
+              {{ __('stores.expansion_desc') }}
             </p>
           </div>
         </div>
@@ -364,27 +364,27 @@
       <div class="lg:col-span-8 flex flex-col items-start">
         <div class="inline-flex items-center gap-space-2xs px-space-sm py-space-2xs bg-primary-fixed text-on-primary-fixed rounded-full font-label-sm uppercase tracking-wider font-bold mb-space-sm">
           <span class="material-symbols-outlined text-[15px]">sentiment_very_satisfied</span>
-          <span>Mampir Langsung atau Pesan Online</span>
+          <span>{{ __('about.cta_badge') }}</span>
         </div>
         <h3 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight leading-tight mb-space-xs">
-          Rindu Kuliner Rumah? Kami Hadir Membawa Hangatnya Indonesia.
+          {{ __('about.cta_title') }}
         </h3>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-          Silakan mampir ke gerai kami di Klaten untuk berbelanja langsung, atau lihat katalog online dan chat via WhatsApp. Tim kami siap membantu pesanan Anda dengan hangat layaknya tetangga sendiri.
+          {{ __('about.cta_desc') }}
         </p>
       </div>
       <!-- CTA Action Buttons -->
       <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-space-sm w-full">
         <a class="w-full inline-flex items-center justify-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary py-space-sm px-space-lg rounded-xl font-label-lg text-label-lg transition-all shadow-md text-center" href="{{ route('products') }}">
           <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
-          Jelajahi Katalog Produk
+          {{ __('about.cta_catalog') }}
         </a>
-        <a class="w-full inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-on-secondary-container text-on-secondary py-space-sm px-space-lg rounded-xl font-label-lg text-label-lg transition-all shadow-sm text-center" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode('Halo Toko Kelontong, saya ingin konsultasi pemesanan makanan khas Indonesia') }}" rel="noopener noreferrer" target="_blank">
+        <a class="w-full inline-flex items-center justify-center gap-space-xs bg-secondary hover:bg-on-secondary-container text-on-secondary py-space-sm px-space-lg rounded-xl font-label-lg text-label-lg transition-all shadow-sm text-center" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ urlencode(__('about.wa_consult')) }}" rel="noopener noreferrer" target="_blank">
           <span class="material-symbols-outlined text-[20px]">chat</span>
-          Konsultasi via WhatsApp
+          {{ __('about.cta_wa') }}
         </a>
         <a class="w-full inline-flex items-center justify-center gap-space-2xs text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors py-1 text-center" href="{{ route('contact') }}">
-          Lihat kontak lengkap &amp; form pesan <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+          {{ __('about.cta_contact') }} <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
         </a>
       </div>
     </div>

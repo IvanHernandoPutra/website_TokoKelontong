@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', __('home.hero_title_highlight') . ' — Toko Kelontong')
+@section('meta_description', __('home.hero_tagline'))
+
 @section('content')
 <div class="flex flex-col w-full">
 <!-- HERO -->
@@ -9,22 +12,22 @@
 <div class="lg:col-span-7 flex flex-col items-start gap-space-md">
 <div class="inline-flex items-center gap-space-xs bg-secondary/10 border border-secondary/20 px-space-sm py-space-2xs rounded-full">
 <span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">Oleh-Oleh Khas Nusantara &bull; Harga Eceran &amp; Grosir</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">{!! __('home.badge_hero') !!}</span>
 </div>
 <h1 class="font-display text-display lg:text-[52px] lg:leading-[60px] text-on-surface font-black tracking-tight">
-Rasa Asli Indonesia, <span class="text-primary">Langsung dari Klaten</span>
+{!! __('home.hero_title', ['highlight' => '<span class="text-primary">'.__('home.hero_title_highlight').'</span>']) !!}
 </h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed max-w-xl">
-Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik, dan makanan khas Nusantara. Dikurasi langsung dari produsen lokal — segar, lengkap, dan terjangkau.
+{{ __('home.hero_tagline') }}
 </p>
 <div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
 <a class="inline-flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary px-space-xl py-space-md rounded-xl font-label-lg text-label-lg transition-all shadow-[0_4px_16px_-4px_rgba(159,60,22,0.35)]" href="{{ route('products') }}">
-<span>Lihat Seluruh Produk</span>
+<span>{{ __('home.hero_cta_products') }}</span>
 <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
 </a>
 <a class="inline-flex items-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface px-space-lg py-space-md rounded-xl font-label-lg text-label-lg transition-all" href="{{ route('shipping') }}">
 <span class="material-symbols-outlined text-secondary text-[20px]">shopping_cart</span>
-<span>Cara Pemesanan</span>
+<span>{{ __('home.hero_cta_shipping') }}</span>
 </a>
 </div>
 <div class="mt-space-lg w-full max-w-xl rounded-2xl bg-surface/95 backdrop-blur-md border border-outline-variant/40 shadow-[0_6px_24px_-6px_rgba(84,46,26,0.08)] p-3 sm:p-5">
@@ -34,23 +37,23 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 <span class="font-display text-2xl sm:text-3xl lg:text-[34px] text-primary font-black tracking-tight leading-none">100%</span>
 <span class="material-symbols-outlined text-[17px] text-primary hidden sm:inline">verified</span>
 </div>
-<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">UMKM Asli</span>
-<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">Otentik Nusantara</span>
+<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">{{ __('home.stat1_value') }}</span>
+<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">{{ __('home.stat1_sub') }}</span>
 </div>
 <div class="flex flex-col justify-center px-2 sm:px-4">
 <div class="flex items-center gap-1">
 <span class="font-display text-2xl sm:text-3xl lg:text-[34px] text-secondary font-black tracking-tight leading-none">35+</span>
 <span class="material-symbols-outlined text-[17px] text-secondary hidden sm:inline">storefront</span>
 </div>
-<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">Mitra UMKM</span>
-<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">Kurasi Langsung</span>
+<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">{{ __('home.stat2_value') }}</span>
+<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">{{ __('home.stat2_sub') }}</span>
 </div>
 <div class="flex flex-col justify-center px-2 sm:px-4 last:pr-0">
 <div class="flex items-center gap-1">
 <span class="font-display text-[16px] sm:text-2xl lg:text-[24px] text-tertiary font-black tracking-tight leading-none uppercase">Food Grade</span>
 </div>
-<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">Kemasan Higienis</span>
-<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">Aman &amp; Halal</span>
+<span class="text-[12px] sm:text-[13px] font-bold text-on-surface mt-1.5 leading-tight">{{ __('home.stat3_value') }}</span>
+<span class="text-[10px] sm:text-[11px] text-on-surface-variant leading-none mt-0.5 hidden sm:inline">{{ __('home.stat3_sub') }}</span>
 </div>
 </div>
 </div>
@@ -65,11 +68,11 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 <span class="material-symbols-outlined">verified</span>
 </div>
 <div class="flex flex-col">
-<span class="font-title-md text-title-md text-on-surface leading-tight">Kurasi Terjamin</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Langsung dari produsen Nusantara</span>
+<span class="font-title-md text-title-md text-on-surface leading-tight">{{ __('home.hero_card_title') }}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{ __('home.hero_card_sub') }}</span>
 </div>
 </div>
-<span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-secondary-container text-on-secondary-container rounded font-bold">Kurasi Lokal</span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-2xs bg-secondary-container text-on-secondary-container rounded font-bold">{{ __('home.hero_card_badge') }}</span>
 </div>
 </div>
 </div>
@@ -90,15 +93,15 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 </div>
 <span class="inline-flex items-center gap-1 font-label-sm text-[11px] font-bold uppercase tracking-wider text-primary bg-primary/10 px-3 py-1 rounded-full group-hover:bg-primary group-hover:text-white transition-colors">
 <span class="material-symbols-outlined text-[13px]">verified</span>
-<span>100% Otentik</span>
+<span>{{ __('home.feat1_badge') }}</span>
 </span>
 </div>
 <div class="flex flex-col gap-1.5">
-<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-primary transition-colors">Produk Asli Indonesia</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Dikurasi langsung dari ribuan produsen dan UMKM lokal, menjaga resep turun-temurun dan cita rasa asli nusantara.</p>
+<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-primary transition-colors">{{ __('home.feat1_title') }}</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">{{ __('home.feat1_desc') }}</p>
 </div>
 <div class="flex items-center gap-1 text-primary text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-<span>Kurasi UMKM Mitra</span>
+<span>{{ __('home.feat1_foot') }}</span>
 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </div>
 </div>
@@ -112,15 +115,15 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 </div>
 <span class="inline-flex items-center gap-1 font-label-sm text-[11px] font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-3 py-1 rounded-full group-hover:bg-secondary group-hover:text-white transition-colors">
 <span class="material-symbols-outlined text-[13px]">local_offer</span>
-<span>Harga Terbaik</span>
+<span>{{ __('home.feat2_badge') }}</span>
 </span>
 </div>
 <div class="flex flex-col gap-1.5">
-<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-secondary transition-colors">Harga Jujur &amp; Transparan</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Harga eceran dan grosir langsung dari sumbernya — bersahabat untuk belanja harian maupun stok usaha, tanpa biaya tersembunyi.</p>
+<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-secondary transition-colors">{{ __('home.feat2_title') }}</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">{{ __('home.feat2_desc') }}</p>
 </div>
 <div class="flex items-center gap-1 text-secondary text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-<span>Eceran &amp; Grosir</span>
+<span>{!! __('home.feat2_foot') !!}</span>
 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </div>
 </div>
@@ -134,15 +137,15 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 </div>
 <span class="inline-flex items-center gap-1 font-label-sm text-[11px] font-bold uppercase tracking-wider text-tertiary bg-tertiary/10 px-3 py-1 rounded-full group-hover:bg-tertiary group-hover:text-white transition-colors">
 <span class="material-symbols-outlined text-[13px]">shield</span>
-<span>Food Grade</span>
+<span>{{ __('home.feat3_badge') }}</span>
 </span>
 </div>
 <div class="flex flex-col gap-1.5">
-<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-tertiary transition-colors">Kemasan Aman &amp; Higienis</h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Diproteksi kemasan kedap udara dan bantalan tebal agar camilan tetap renyah, bumbu tetap awet, dan produk sampai dalam kondisi prima.</p>
+<h3 class="font-headline-sm text-[21px] text-on-surface font-bold group-hover:text-tertiary transition-colors">{{ __('home.feat3_title') }}</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">{{ __('home.feat3_desc') }}</p>
 </div>
 <div class="flex items-center gap-1 text-tertiary text-xs font-bold uppercase tracking-wider opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300">
-<span>Proteksi Maksimal</span>
+<span>{{ __('home.feat3_foot') }}</span>
 <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
 </div>
 </div>
@@ -155,13 +158,13 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 <div class="max-w-container-max mx-auto px-4 sm:px-gutter-desktop flex flex-col gap-space-xl">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
 <div>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Jelajah Nusantara</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">{{ __('home.cat_eyebrow') }}</span>
 <div class="flex items-center justify-between gap-2">
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Kategori Pilihan</h2>
-<span class="md:hidden text-xs text-on-surface-variant flex items-center gap-1 font-medium bg-surface-container px-2.5 py-1 rounded-full"><span class="material-symbols-outlined text-[15px] text-primary">swipe</span> Geser</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">{{ __('home.cat_title') }}</h2>
+<span class="md:hidden text-xs text-on-surface-variant flex items-center gap-1 font-medium bg-surface-container px-2.5 py-1 rounded-full"><span class="material-symbols-outlined text-[15px] text-primary">swipe</span> {{ __('common.swipe') }}</span>
 </div>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Pilih ragam santapan khas dari lima kelompok komoditas favorit keluarga dan pecinta kuliner Indonesia.</p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">{{ __('home.cat_desc') }}</p>
 </div>
 <!-- Carousel on mobile (< md), grid on tablet & desktop (>= md) -->
 <div class="flex md:grid md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-4 md:pb-0 -mx-4 px-[12.5vw] md:mx-0 md:px-0 scrollbar-none">
@@ -172,8 +175,8 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 @endif
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
 <div class="relative z-10 flex flex-col">
-<span class="font-title-md text-title-md text-white font-bold group-hover:text-primary-fixed transition-colors">{{ $cat->name }}</span>
-<span class="font-label-sm text-label-sm text-surface-dim">{{ $cat->subtitle }}</span>
+<span class="font-title-md text-title-md text-white font-bold group-hover:text-primary-fixed transition-colors">{{ __('products.category.'.$cat->slug) }}</span>
+<span class="font-label-sm text-label-sm text-surface-dim">{{ __('products.category_sub.'.$cat->slug) }}</span>
 </div>
 </a>
 @endforeach
@@ -186,14 +189,14 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 <div class="max-w-container-max mx-auto px-4 sm:px-gutter-desktop flex flex-col gap-space-2xl">
 <div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
 <div>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Koleksi Paling Dicari</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">{{ __('home.featured_eyebrow') }}</span>
 <div class="flex items-center justify-between gap-2">
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Produk Unggulan</h2>
-<span class="sm:hidden text-xs text-on-surface-variant flex items-center gap-1 font-medium bg-surface-container px-2.5 py-1 rounded-full"><span class="material-symbols-outlined text-[15px] text-secondary">swipe</span> Geser</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">{{ __('home.featured_title') }}</h2>
+<span class="sm:hidden text-xs text-on-surface-variant flex items-center gap-1 font-medium bg-surface-container px-2.5 py-1 rounded-full"><span class="material-symbols-outlined text-[15px] text-secondary">swipe</span> {{ __('common.swipe') }}</span>
 </div>
 </div>
 <a class="inline-flex items-center gap-space-2xs font-title-md text-title-md text-primary hover:text-primary-container font-semibold transition-colors" href="{{ route('products') }}">
-<span>Lihat Seluruh Katalog</span>
+<span>{{ __('home.featured_link') }}</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
@@ -213,17 +216,17 @@ Obati rindu kampung halaman dengan aneka snack legendaris, bumbu rempah otentik,
 <div class="max-w-container-max mx-auto px-gutter-desktop">
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
 <div class="lg:col-span-6 flex flex-col items-start gap-space-md">
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Kisah Kami</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Dari Klaten untuk Meja Makan Anda</h2>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">{{ __('home.about_eyebrow') }}</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">{{ __('home.about_title') }}</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-Berawal dari toko kelontong di Klaten, Jawa Tengah, kami kini melayani pelanggan yang mencari camilan, bumbu, dan bahan makanan khas Indonesia.
+{{ __('home.about_p1') }}
 </p>
 <p class="font-body-md text-body-md text-on-surface-variant">
-Semua produk dikurasi langsung dari produsen dan UMKM lokal terpercaya — dijamin asli, segar, dan harganya bersahabat.
+{{ __('home.about_p2') }}
 </p>
 <div class="pt-space-xs">
 <a class="inline-flex items-center gap-space-xs bg-secondary hover:bg-on-secondary-container text-on-secondary px-space-xl py-space-md rounded-xl font-label-lg text-label-lg transition-all shadow-[0_4px_16px_-4px_rgba(68,103,68,0.3)]" href="{{ route('about') }}">
-<span>Kenali Kami</span>
+<span>{{ __('home.about_cta') }}</span>
 <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
@@ -234,8 +237,8 @@ Semua produk dikurasi langsung dari produsen dan UMKM lokal terpercaya — dijam
 <div class="absolute inset-0 bg-gradient-to-tr from-black/60 via-transparent to-transparent"></div>
 <div class="absolute bottom-6 left-6 right-6 p-space-md bg-surface/90 backdrop-blur-md rounded-xl flex items-center justify-between">
 <div>
-<span class="font-title-md text-title-md text-on-surface font-bold block">Toko Kelontong &bull; Klaten</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Pusat Kurasi Produk UMKM Nusantara</span>
+<span class="font-title-md text-title-md text-on-surface font-bold block">{!! __('home.about_card_title') !!}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{ __('home.about_card_sub') }}</span>
 </div>
 <a class="p-space-xs rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" href="{{ route('stores') }}">
 <span class="material-symbols-outlined text-[22px]">store</span>
@@ -251,10 +254,10 @@ Semua produk dikurasi langsung dari produsen dan UMKM lokal terpercaya — dijam
 <section class="w-full bg-surface py-space-3xl">
 <div class="max-w-container-max mx-auto px-gutter-desktop flex flex-col gap-space-2xl">
 <div class="text-center max-w-2xl mx-auto flex flex-col items-center gap-space-xs">
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Dipercaya Pelanggan</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface">Cerita Pelanggan Kami</h2>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">{{ __('home.testi_eyebrow') }}</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">{{ __('home.testi_title') }}</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">
-Kepuasan pelanggan adalah resep utama kami — dari belanja harian sampai stok usaha.
+{{ __('home.testi_desc') }}
 </p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
@@ -269,7 +272,7 @@ Kepuasan pelanggan adalah resep utama kami — dari belanja harian sampai stok u
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
 <p class="font-body-md text-body-md text-on-surface italic">
-“Langganan tetap untuk stok warung saya. Harga grosirnya jujur, barang selalu lengkap, dan yang penting anak-anak kecil pada suka kerupuknya.”
+“{{ __('home.testi1_quote') }}”
 </p>
 </div>
 <div class="mt-space-lg flex items-center gap-space-sm pt-space-sm">
@@ -277,8 +280,8 @@ Kepuasan pelanggan adalah resep utama kami — dari belanja harian sampai stok u
 SW
 </div>
 <div class="flex flex-col">
-<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Sugianto Wibowo</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Warung Sembako, Klaten 🇮🇩</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">{{ __('home.testi1_author') }}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{ __('home.testi1_role') }}</span>
 </div>
 </div>
 </div>
@@ -293,7 +296,7 @@ SW
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
 <p class="font-body-md text-body-md text-on-surface italic">
-“Kopi Gayo dan sambal bawangnya favorit keluarga. Adminnya ramah dan fast response via WhatsApp — tanya stok langsung dijawab.”
+“{{ __('home.testi2_quote') }}”
 </p>
 </div>
 <div class="mt-space-lg flex items-center gap-space-sm pt-space-sm">
@@ -301,8 +304,8 @@ SW
 HW
 </div>
 <div class="flex flex-col">
-<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Hendra Wijaya</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Yogyakarta 🇮🇩</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">{{ __('home.testi2_author') }}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{ __('home.testi2_role') }}</span>
 </div>
 </div>
 </div>
@@ -317,7 +320,7 @@ HW
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
 <p class="font-body-md text-body-md text-on-surface italic">
-“Bumbu rendang instan dan keripik singkongnya juara! Kemasannya rapi dan rasa persis buatan rumahan. Sekali belanja jadi langganan.”
+“{{ __('home.testi3_quote') }}”
 </p>
 </div>
 <div class="mt-space-lg flex items-center gap-space-sm pt-space-sm">
@@ -325,8 +328,8 @@ HW
 DS
 </div>
 <div class="flex flex-col">
-<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">Dewi Soekarno</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Semarang 🇮🇩</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold leading-tight">{{ __('home.testi3_author') }}</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">{{ __('home.testi3_role') }}</span>
 </div>
 </div>
 </div>
@@ -343,19 +346,19 @@ DS
 <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
 <div class="flex flex-col items-start gap-space-xs max-w-2xl">
 <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed font-bold bg-white/10 px-space-sm py-0.5 rounded-full">
-Pesan Sekarang
+{{ __('home.cta_badge') }}
 </span>
 <h2 class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">
-Lagi cari camilan, bumbu dapur, atau stok usaha? Semua ada di sini.
+{{ __('home.cta_title') }}
 </h2>
 <p class="font-body-lg text-body-lg text-primary-fixed/90 max-w-xl">
-Tanya stok dan harga langsung via WhatsApp — tim kami siap bantu pilih produk terbaik untuk kebutuhan Anda.
+{{ __('home.cta_desc') }}
 </p>
 </div>
 <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
-<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg px-space-xl py-space-md rounded-xl transition-all shadow-md" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ rawurlencode('Halo Toko Kelontong, saya ingin tanya produk & harga') }}" rel="noopener" target="_blank">
+<a class="inline-flex items-center justify-center gap-space-xs bg-surface-container-lowest text-primary hover:bg-surface-container font-label-lg text-label-lg px-space-xl py-space-md rounded-xl transition-all shadow-md" href="https://wa.me/{{ config('toko.wa_number') }}?text={{ rawurlencode(__('home.wa_greeting')) }}" rel="noopener" target="_blank">
 <span class="material-symbols-outlined text-[20px]">chat</span>
-<span>Tanya via WhatsApp</span>
+<span>{{ __('home.cta_button') }}</span>
 </a>
 </div>
 </div>

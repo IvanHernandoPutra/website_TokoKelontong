@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Facades\Lang;
 
 class Product extends Model
 {
@@ -31,7 +32,25 @@ class Product extends Model
     public function getWaUrlAttribute(): string
     {
         $number = config('toko.wa_number');
-        $text = rawurlencode("Halo Toko Kelontong, saya tertarik dengan {$this->name}");
+        $text = rawurlencode(__('products.wa_product', ['name' => $this->name]));
         return "https://wa.me/{$number}?text={$text}";
+    }
+
+    public function getTranslatedDescriptionAttribute(): string
+    {
+        $key = "products.desc.{$this->slug}";
+
+        return Lang::has($key) ? __($key) : $this->description;
+    }
+
+    public function getTranslatedBadgeAttribute(): ?string
+    {
+        if (! $this->badge) {
+            return null;
+        }
+
+        $key = "products.badge.{$this->badge}";
+
+        return Lang::has($key) ? __($key) : $this->badge;
     }
 }
