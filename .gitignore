@@ -11,4 +11,6 @@ web/storage/logs/*
 .DS_Store
 Thumbs.db
 web/public/images/products_orig/
+web/public/images_backup/
 web/database/*.sqlite.bak
+

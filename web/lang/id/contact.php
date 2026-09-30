@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Kontak — Toko Kelontong',
+    'title' => 'Kontak · Toko Kelontong',
     'breadcrumb' => 'Kontak',
     'h1' => 'Hubungi Kami',
     'info_title' => 'Informasi Kontak',

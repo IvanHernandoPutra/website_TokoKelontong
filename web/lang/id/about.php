@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'Tentang Kami — Toko Kelontong',
+    'title' => 'Tentang Kami · Toko Kelontong',
     'breadcrumb' => 'Tentang Kami',
     'badge_story' => 'Akar Nilai & Perjalanan',
     'h1' => 'Dari Sudut Klaten untuk Kebutuhan Harian Nusantara.',
     'intro' => 'Toko Kelontong adalah unit usaha ritel makanan khas Indonesia di bawah naungan resmi CV. Bertiga Tradexa.',
-    'p1' => 'Perjalanan kami berakar sederhana dari sebuah toko kelontong di Klaten, Jawa Tengah — setia memenuhi kebutuhan harian bahan pangan tetangga dan masyarakat sekitar. Melalui interaksi hangat dari meja kasir kayu, kami belajar memahamu selera pelanggan: aroma seduhan kopi khas lereng gunung, renyahnya basreng kampung halaman, dan racikan rempah bumbu dapur otentik.',
-    'p2' => 'Menjawab kebutuhan tersebut, kami mentransformasi kelontong tradisional menjadi toko belanja makanan khas Indonesia yang modern. Kini pelanggan cukup lihat katalog online, chat via WhatsApp, dan pesanan siap diambil — praktis tanpa kehilangan kehangatan pelayanan toko tetangga.',
+    'p1' => 'Kami mulai dari toko kelontong biasa di Klaten, Jawa Tengah. Dari kasir kayu itu kami hafal selera pembeli: kopi dari lereng gunung, basreng renyah, bumbu dapur racikan sendiri.',
+    'p2' => 'Sekarang katalognya kami pindah online. Pembeli tinggal lihat katalog, chat WhatsApp, dan pesanan kami siapkan. Caranya berubah, pelayanannya tetap seperti toko tetangga.',
     'quote' => '“Misi kami sederhana: membuat rasa rumah bisa dinikmati di mana pun.”',
-    'quote_attribution' => '— Komitmen CV. Bertiga Tradexa kepada setiap pelanggan',
+    'quote_attribution' => 'Komitmen CV. Bertiga Tradexa kepada setiap pelanggan',
     'img_tradition_badge' => 'Akar Tradisi',
     'img_tradition_text' => 'Toko Ritel Fisik Klaten, Jawa Tengah',
     'pack_badge' => 'Kemasan Aman & Higienis',
@@ -35,7 +35,7 @@ return [
     'pillar1_foot' => '100% Asli Nusantara',
     'pillar2_no' => 'Pilar 02',
     'pillar2_title' => 'Harga Wajar & Transparan',
-    'pillar2_desc' => 'Standar harga grosir & eceran wajar tanpa biaya tersembunyi. Semua harga tercantum jelas di katalog — apa adanya, tanpa kejutan.',
+    'pillar2_desc' => 'Harga grosir dan eceran wajar, tanpa biaya tersembunyi. Semua tercantum jelas di katalog, apa adanya.',
     'pillar2_foot' => 'Jujur & Kompetitif',
     'pillar3_no' => 'Pilar 03',
     'pillar3_title' => 'Pelayanan Ramah & Personal',

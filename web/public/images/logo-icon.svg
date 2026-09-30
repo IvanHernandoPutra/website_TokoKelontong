@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="iconTerracotta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA4318" />
+      <stop offset="100%" stop-color="#872E0D" />
+    </linearGradient>
+
+    <linearGradient id="iconAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="iconCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="100%" stop-color="#FEF3C7" />
+    </linearGradient>
+
+    <linearGradient id="iconLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <filter id="badgeShadow" x="-10%" y="-10%" width="130%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#872E0D" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 10)" filter="url(#badgeShadow)">
+    <!-- Base Rounded Badge -->
+    <rect x="0" y="0" width="100" height="100" rx="28" fill="url(#iconTerracotta)" />
+    <rect x="1.5" y="1.5" width="97" height="97" rx="26.5" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="1.5" fill="none" />
+
+    <!-- Warung Canopy / Awning -->
+    <path d="M 22 41 L 78 41 C 80.5 41 82 39 80 37 L 66 23 C 64 21 61 20 50 20 C 39 20 36 21 34 23 L 20 37 C 18 39 19.5 41 22 41 Z" fill="url(#iconAmber)" />
+
+    <!-- Awning 3 Scallop Stripes -->
+    <path d="M 21 41 Q 21 54 30.5 54 Q 40 54 40 41 Z" fill="#FBBF24" />
+    <path d="M 40 41 Q 40 54 50 54 Q 60 54 60 41 Z" fill="url(#iconCream)" />
+    <path d="M 60 41 Q 60 54 69.5 54 Q 79 54 79 41 Z" fill="#FBBF24" />
+    <path d="M 21 41 L 79 41" stroke="#872E0D" stroke-width="2" stroke-linecap="round" opacity="0.3" />
+
+    <!-- Smile Curve / Shopping Basket -->
+    <path d="M 28 62 C 34 76 66 76 72 62" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none" />
+    <circle cx="28" cy="62" r="2.5" fill="#FBBF24" />
+    <circle cx="72" cy="62" r="2.5" fill="#FBBF24" />
+
+    <!-- Top Sprout / Fresh Leaf -->
+    <path d="M 50 14 C 54 11 60 12 61 17 C 61 22 55 24 50 22 C 49 19 48 15 50 14 Z" fill="url(#iconLeaf)" />
+  </g>
+</svg>

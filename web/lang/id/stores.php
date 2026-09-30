@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Toko Kami — Toko Kelontong',
+    'title' => 'Toko Kami · Toko Kelontong',
     'breadcrumb' => 'Toko Kami',
     'eyebrow' => 'Titik Temu Fisik',
     'h1' => 'Kunjungi Toko Kami',
     'desc' => 'Ingin belanja langsung, memilih sendiri oleh-oleh favorit, atau titip pesanan khusus? Pintu gerai fisik kami selalu terbuka hangat menyambut Anda.',
     'status' => 'Outlet Pusat Beroperasi Normal',
     'main_badge' => 'Gerai Pusat & Gudang',
-    'main_title' => 'Toko Kelontong — Klaten (Pusat)',
+    'main_title' => 'Toko Kelontong · Klaten (Pusat)',
     'main_desc' => 'Pusat kurasi ritel, stok komoditas makanan kering, dan layanan pesanan cepat area Klaten.',
     'location_label' => 'Lokasi Outlet',
     'location_value' => 'Griya Trucuk Indah No. 53, Jambon, Sabrang Lor, Trucuk, Klaten, Jawa Tengah 57467',

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="favTerracotta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA4318" />
+      <stop offset="100%" stop-color="#872E0D" />
+    </linearGradient>
+    <linearGradient id="favAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#favTerracotta)" />
+  
+  <!-- Awning Top -->
+  <path d="M 14 26 L 50 26 C 51.5 26 52.5 25 51 23.5 L 42 15 C 41 14 39 13 32 13 C 25 13 23 14 22 15 L 13 23.5 C 11.5 25 12.5 26 14 26 Z" fill="url(#favAmber)" />
+  
+  <!-- Scallop Stripes -->
+  <path d="M 13 26 Q 13 34 19.3 34 Q 25.6 34 25.6 26 Z" fill="#FBBF24" />
+  <path d="M 25.6 26 Q 25.6 34 32 34 Q 38.4 34 38.4 26 Z" fill="#FFFDF7" />
+  <path d="M 38.4 26 Q 38.4 34 44.7 34 Q 51 34 51 26 Z" fill="#FBBF24" />
+
+  <!-- Smile Curve -->
+  <path d="M 18 39 C 22 49 42 49 46 39" stroke="#FFFFFF" stroke-width="3.8" stroke-linecap="round" fill="none" />
+  <circle cx="18" cy="39" r="1.8" fill="#FBBF24" />
+  <circle cx="46" cy="39" r="1.8" fill="#FBBF24" />
+</svg>

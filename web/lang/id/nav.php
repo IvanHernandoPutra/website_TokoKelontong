@@ -8,10 +8,10 @@ return [
     'shipping' => 'Cara Pemesanan',
     'faq' => 'FAQ',
     'contact' => 'Kontak',
-    'announcement_store' => 'Toko Resmi Klaten',
-    'announcement_tagline' => '100% Produk UMKM • Harga Eceran & Grosir',
+    'announcement_store' => 'Toko Klaten',
+    'announcement_tagline' => 'Produk UMKM • Harga Eceran & Grosir',
     'announcement_cs' => 'CS WhatsApp:',
-    'cta' => 'Tanya / Hubungi Kami',
+    'cta' => 'Tanya-tanya Dulu Boleh',
     'wa_cs' => 'WhatsApp CS Langsung',
     'toggle_language' => 'Ganti Bahasa',
 ];

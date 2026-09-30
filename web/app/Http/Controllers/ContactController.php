@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMessageReceived;
 use App\Models\ContactMessage;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -16,7 +18,14 @@ class ContactController extends Controller
             'message' => 'required|string|max:2000',
         ]);
 
-        ContactMessage::create($validated);
+        $contactMessage = ContactMessage::create($validated);
+
+        // Notifikasi ke inbox toko; form tetap sukses walau mailer belum dikonfigurasi.
+        try {
+            Mail::to(config('toko.email'))->send(new ContactMessageReceived($contactMessage));
+        } catch (\Throwable $e) {
+            report($e);
+        }
 
         return back()->with('success', 'Pesan terkirim! Kami akan membalas secepatnya.');
     }

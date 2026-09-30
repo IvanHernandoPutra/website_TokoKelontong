@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'title' => 'Our Stores — Toko Kelontong',
+    'title' => 'Our Stores · Toko Kelontong',
     'breadcrumb' => 'Our Stores',
     'eyebrow' => 'Physical Touchpoint',
     'h1' => 'Visit Our Store',
     'desc' => 'Want to shop in person, hand-pick your favorite goodies, or place a special order? Our store doors are always open to welcome you.',
     'status' => 'Main Outlet Operating Normally',
     'main_badge' => 'Flagship Store & Warehouse',
-    'main_title' => 'Toko Kelontong — Klaten (Headquarters)',
+    'main_title' => 'Toko Kelontong · Klaten (Headquarters)',
     'main_desc' => 'Retail curation hub, dried food commodity stock, and fast-order service for the Klaten area.',
     'location_label' => 'Outlet Location',
     'location_value' => 'Griya Trucuk Indah No. 53, Jambon, Sabrang Lor, Trucuk, Klaten, Central Java 57467',

@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'title' => 'About Us — Toko Kelontong',
+    'title' => 'About Us · Toko Kelontong',
     'breadcrumb' => 'About Us',
     'badge_story' => 'Our Roots & Journey',
     'h1' => 'From a Corner of Klaten for Indonesia\'s Everyday Needs.',
     'intro' => 'Toko Kelontong is an Indonesian specialty food retail unit under the official umbrella of CV. Bertiga Tradexa.',
-    'p1' => 'Our journey began simply, from a small grocery store in Klaten, Central Java — faithfully serving the daily food needs of neighbors and the surrounding community. Through warm exchanges across a wooden cashier counter, we came to understand our customers\' tastes: the aroma of highland coffee, the crunch of hometown basreng, and the blends of authentic kitchen spices.',
-    'p2' => 'Answering that calling, we transformed a traditional grocery into a modern Indonesian specialty food shop. Today, customers simply browse the online catalog, chat via WhatsApp, and pick up their order — practical, without losing the warmth of neighborhood service.',
+    'p1' => 'We started as an ordinary grocery store in Klaten, Central Java. From that wooden counter we learned what buyers want: coffee from the highlands, crunchy basreng, and spice mixes ground locally.',
+    'p2' => 'Now the catalog is online. Buyers browse, chat on WhatsApp, and we prepare the order. The method changed; the service still feels like a corner store.',
     'quote' => '“Our mission is simple: to bring the taste of home within reach, wherever you are.”',
-    'quote_attribution' => '— CV. Bertiga Tradexa\'s commitment to every customer',
+    'quote_attribution' => 'CV. Bertiga Tradexa\'s commitment to every customer',
     'img_tradition_badge' => 'Rooted in Tradition',
     'img_tradition_text' => 'Physical Retail Store in Klaten, Central Java',
     'pack_badge' => 'Safe & Hygienic Packaging',
@@ -35,7 +35,7 @@ return [
     'pillar1_foot' => '100% Authentic Indonesian',
     'pillar2_no' => 'Pillar 02',
     'pillar2_title' => 'Fair & Transparent Pricing',
-    'pillar2_desc' => 'Fair wholesale & retail price standards with no hidden fees. Every price is clearly listed in the catalog — what you see is what you pay.',
+    'pillar2_desc' => 'Fair wholesale and retail prices, no hidden fees. Every price is listed clearly in the catalog: what you see is what you pay.',
     'pillar2_foot' => 'Honest & Competitive',
     'pillar3_no' => 'Pillar 03',
     'pillar3_title' => 'Friendly & Personal Service',

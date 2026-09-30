@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'FAQ — Toko Kelontong',
+    'title' => 'FAQ · Toko Kelontong',
     'breadcrumb' => 'FAQ',
     'h1' => 'Frequently Asked Questions',
     'q1' => 'How do I place an order?',
@@ -13,7 +13,7 @@ return [
     'q4' => 'Are the products authentic and of good quality?',
     'a4' => 'Yes. Every product is curated directly from trusted local producers and MSMEs, and packed airtight to stay fresh until it reaches your hands.',
     'q5' => 'Can I order in bulk (wholesale)?',
-    'a5' => 'Yes. We serve warungs, restaurants, offices, and events — contact us for special wholesale pricing.',
+    'a5' => 'Yes. We serve warungs, restaurants, offices, and events · contact us for special wholesale pricing.',
     'q6' => 'How long does order processing take?',
     'a6' => 'Orders are processed within 1–2 business days after confirmation. Further details are arranged directly while chatting with our team.',
     'q7' => 'Do you have a physical store?',

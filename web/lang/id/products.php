@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Katalog Produk — Toko Kelontong',
+    'title' => 'Katalog Produk · Toko Kelontong',
     'breadcrumb' => 'Produk',
     'header_eyebrow' => 'Katalog Retail Nusantara',
     'header_title' => 'Katalog Produk Nusantara',
@@ -13,7 +13,7 @@ return [
     'sidebar_reset' => 'Reset',
     'sidebar_all' => 'Semua Kategori',
     'wholesale_title' => 'Butuh Stok Grosir / Jumlah Besar?',
-    'wholesale_desc' => 'Melayani suplai warung, kantor, rumah makan, acara, dan pesanan dalam jumlah besar — harga khusus menanti.',
+    'wholesale_desc' => 'Suplai warung, kantor, rumah makan, dan pesanan jumlah besar. Harga khusus grosir, tanya saja.',
     'wholesale_cta' => 'Konsultasi via WhatsApp',
     'wa_wholesale' => 'Halo Toko Kelontong, saya ingin konsultasi pesanan grosir',
     'toolbar_showing' => 'Menampilkan :count dari :total produk terkurasi',
@@ -25,7 +25,7 @@ return [
     'search_button' => 'Cari',
     'empty' => 'Tidak ada produk yang cocok. Coba kata kunci lain.',
     'detail_weight' => 'Berat kemasan',
-    'detail_airtight' => 'Kemasan kedap udara — produk tetap segar dan renyah',
+    'detail_airtight' => 'Kemasan kedap udara, produk tetap segar dan renyah',
     'detail_order' => 'Pesan via WhatsApp',
     'detail_related' => 'Produk Serupa',
     'wa_product' => 'Halo Toko Kelontong, saya tertarik dengan :name',

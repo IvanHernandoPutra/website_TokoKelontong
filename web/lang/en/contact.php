@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Contact — Toko Kelontong',
+    'title' => 'Contact · Toko Kelontong',
     'breadcrumb' => 'Contact',
     'h1' => 'Get in Touch',
     'info_title' => 'Contact Information',
