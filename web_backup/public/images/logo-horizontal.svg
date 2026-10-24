@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="warmTerracotta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA4318" />
+      <stop offset="100%" stop-color="#872E0D" />
+    </linearGradient>
+
+    <linearGradient id="warmAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="softCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" />
+      <stop offset="100%" stop-color="#FEF3C7" />
+    </linearGradient>
+
+    <linearGradient id="leafGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="130%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#872E0D" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 10)" filter="url(#softGlow)">
+    <rect x="0" y="0" width="100" height="100" rx="26" fill="url(#warmTerracotta)" />
+    <rect x="1.5" y="1.5" width="97" height="97" rx="24.5" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="1.5" fill="none" />
+    <path d="M 22 41 L 78 41 C 80.5 41 82 39 80 37 L 66 23 C 64 21 61 20 50 20 C 39 20 36 21 34 23 L 20 37 C 18 39 19.5 41 22 41 Z" fill="url(#warmAmber)" />
+    <path d="M 21 41 Q 21 54 30.5 54 Q 40 54 40 41 Z" fill="#FBBF24" />
+    <path d="M 40 41 Q 40 54 50 54 Q 60 54 60 41 Z" fill="url(#softCream)" />
+    <path d="M 60 41 Q 60 54 69.5 54 Q 79 54 79 41 Z" fill="#FBBF24" />
+    <path d="M 21 41 L 79 41" stroke="#872E0D" stroke-width="2" stroke-linecap="round" opacity="0.3" />
+    <path d="M 28 62 C 34 76 66 76 72 62" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" fill="none" />
+    <circle cx="28" cy="62" r="2.5" fill="#FBBF24" />
+    <circle cx="72" cy="62" r="2.5" fill="#FBBF24" />
+    <path d="M 50 14 C 54 11 60 12 61 17 C 61 22 55 24 50 22 C 49 19 48 15 50 14 Z" fill="url(#leafGreen)" />
+  </g>
+
+  <g transform="translate(126, 0)">
+    <text x="0" y="62" font-family="'Plus Jakarta Sans', 'Varela Round', 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="800" letter-spacing="-1.2">
+      <tspan fill="#872E0D">Toko</tspan><tspan fill="#BA4318">Kelontong</tspan><tspan fill="#D97706" font-weight="900">ku</tspan><tspan fill="#94A3B8" font-size="28" font-weight="700" letter-spacing="-0.5">.com</tspan>
+    </text>
+
+    <text x="2" y="93" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#78350F" letter-spacing="1.8" text-transform="uppercase">
+      Belanja Kebutuhan Harian Tetangga
+    </text>
+
+    <g transform="translate(378, 77)">
+      <rect x="0" y="0" width="134" height="22" rx="11" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1" />
+      <circle cx="9" cy="11" r="3.5" fill="#059669" />
+      <text x="18" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#92400E" letter-spacing="0.4">
+        100% ASLI &amp; LOKAL
+      </text>
+    </g>
+  </g>
+</svg>

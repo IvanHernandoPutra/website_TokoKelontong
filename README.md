@@ -26,6 +26,31 @@ Akses di browser:
 
 ---
 
+## Ocean Snack Landing Page
+
+The home route is a responsive Ocean Snack storefront built with Laravel Blade, Tailwind via Vite, and GSAP 3. It uses the existing featured products and local product images, with a reduced-motion fallback.
+
+### Development
+
+From the repository root:
+
+```powershell
+cd web
+npm install
+npm run dev
+```
+
+In a second terminal, start Laravel:
+
+```powershell
+cd web
+php artisan serve
+```
+
+With Docker, use `docker compose up -d` from the repository root and open `http://localhost:8085`. Run `npm run build` before a production-style Docker check so Vite writes `web/public/build/manifest.json`.
+
+---
+
 ## Panduan Deploy ke Vercel
 
 ### 1. Import Repository di Vercel
